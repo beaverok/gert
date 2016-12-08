@@ -1,12 +1,22 @@
-head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+header.header
+    .header__inner
+        a.header__logo
+            img(src="images/logo.png",alt="")
+        .header__url Gerthshop.pro
+        .header__slogan <span>ТВОЙ ПРО ПОСТАВЩИК</span> <span>спортивной фармакологии</span>
 
-    block title
-        title Главная
+        .header__top-right
+            .header__fav
+                span 3
+            .header__last-mess
+                span YF123456789RU
+            .header__auth
+                a.header__auth-link Личный кабинет
 
-    meta(name='viewport', content='width=device-width')
+        include top-menu
+        include main-menu
 
-    link(rel='shortcut icon', href='favicon.ico')
+        include header-search
 
-    link(rel='stylesheet', href='css/styles.css')
+        include header-cart
+
