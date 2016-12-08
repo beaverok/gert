@@ -1,0 +1,28 @@
+.header-search {
+  .absolute();
+  top: 70px;
+  right: 174px;
+
+  &__input {
+    .size(336px,45px);
+    .bg-color(@white);
+    padding: 0 50px 0 23px;
+    border: none;
+    .font-family(@font-trebuchet);
+    .font-size(1.5rem, 4.5rem);
+    color: @black-28;
+  }
+
+  &__submit {
+    .absolute();
+    top: 15px;
+    right: 16px;
+    background-image: url(../images/spritesheet.png);
+    background-position: -72px -220px;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border: none;
+    cursor: pointer;
+  }
+}

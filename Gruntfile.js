@@ -115,8 +115,8 @@ module.exports = function(grunt) {
         sprite:{
             all: {
                 src: 'img/sprite/*.png',
-                dest: 'build/img/spritesheet.png',
-                destCss: 'build/css/sprites.css'
+                dest: 'build/images/spritesheet.png',
+                destCss: 'build/css/sprite.css'
             }
         },
 		watch: {	// отслеживание изменения файлов в реальном времени

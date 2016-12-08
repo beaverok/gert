@@ -1,0 +1,132 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-bg_small-cart {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -220px;
+  width: 32px;
+  height: 44px;
+}
+.icon-ganteli {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 164px;
+  height: 117px;
+}
+.icon-icon_arrow-left {
+  background-image: url(../images/spritesheet.png);
+  background-position: -52px -220px;
+  width: 20px;
+  height: 30px;
+}
+.icon-icon_arrow-right {
+  background-image: url(../images/spritesheet.png);
+  background-position: -32px -220px;
+  width: 20px;
+  height: 30px;
+}
+.icon-icon_btce {
+  background-image: url(../images/spritesheet.png);
+  background-position: -170px -117px;
+  width: 90px;
+  height: 23px;
+}
+.icon-icon_cart-right-btn {
+  background-image: url(../images/spritesheet.png);
+  background-position: -162px -153px;
+  width: 26px;
+  height: 27px;
+}
+.icon-icon_consult {
+  background-image: url(../images/spritesheet.png);
+  background-position: -177px -182px;
+  width: 26px;
+  height: 25px;
+}
+.icon-icon_discount {
+  background-image: url(../images/spritesheet.png);
+  background-position: -164px 0px;
+  width: 103px;
+  height: 103px;
+}
+.icon-icon_email {
+  background-image: url(../images/spritesheet.png);
+  background-position: -188px -153px;
+  width: 31px;
+  height: 22px;
+}
+.icon-icon_fav {
+  background-image: url(../images/spritesheet.png);
+  background-position: -203px -182px;
+  width: 33px;
+  height: 19px;
+}
+.icon-icon_footer-mail {
+  background-image: url(../images/spritesheet.png);
+  background-position: -103px -117px;
+  width: 67px;
+  height: 36px;
+}
+.icon-icon_mail {
+  background-image: url(../images/spritesheet.png);
+  background-position: -219px -153px;
+  width: 37px;
+  height: 18px;
+}
+.icon-icon_platezh {
+  background-image: url(../images/spritesheet.png);
+  background-position: -103px -182px;
+  width: 40px;
+  height: 34px;
+}
+.icon-icon_post {
+  background-image: url(../images/spritesheet.png);
+  background-position: -103px -153px;
+  width: 59px;
+  height: 29px;
+}
+.icon-icon_sb {
+  background-image: url(../images/spritesheet.png);
+  background-position: -143px -182px;
+  width: 34px;
+  height: 33px;
+}
+.icon-icon_search-btn {
+  background-image: url(../images/spritesheet.png);
+  background-position: -72px -220px;
+  width: 15px;
+  height: 15px;
+}
+.icon-icon_sold {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -117px;
+  width: 103px;
+  height: 103px;
+}
+.icon-icon_to-cart-auction {
+  background-image: url(../images/spritesheet.png);
+  background-position: -236px -182px;
+  width: 14px;
+  height: 19px;
+}
+.icon-icon_to-cart-pop {
+  background-image: url(../images/spritesheet.png);
+  background-position: -250px -182px;
+  width: 14px;
+  height: 19px;
+}

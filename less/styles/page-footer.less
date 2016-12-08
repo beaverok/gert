@@ -1,6 +1,8 @@
 .page-footer {
-  height: 403px;
-  border-top: 7px solid #f0f0f0;
+  height: 367px;
+  .bg-image("../images/bg_footer.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
 
   &--inner-page {
     height: 158px;
@@ -8,143 +10,139 @@
     border: none;
     .align-center();
   }
-  &--inner-page &__copyright {
-    .font-family(@font-light);
-    .font-size(1.2rem, 158px);
-    color: @white;
-    opacity: 0.5;
-  }
 
-  &__top {
-    //height: 245px;
-  }
-  &__top-inner {
-    .container();
-    min-height: 245px;
-    padding: 46px 0 48px;
-  }
-  &__top-inner::after {
-    .clear();
-  }
+    &__inner {
+      .container();
+      .relative;
+      height: 367px;
+      padding: 54px 0 0;
+    }
 
-  &__contacts {
-    width: 50%;
-    float: left;
+      &__left {
+        width: 570px;
+        .relative();
+        float: left;
+      }
+      &__right {
+        width: 500px;
+        float: right;
+      }
 
-    @media @screen-md {
-      width: 42%;
-      padding-top: 20px;
-    }
-    @media @screen-xs {
-      width: 100%;
-      padding: 0;
-      float: none;
-    }
-  }
-  &__contacts-title {
-    margin-bottom: 32px;
-    .font-family(@font-bold);
-    .font-size(2.1rem, 18px);
-    color: @color-1e;
-  }
-  &__phone {
-    display: inline-block;
-    width: 230px;
-    .relative();
-    margin-right: 54px;
-    padding-left: 77px;
-    padding-top: 6px;
-    .font-family(@font-reg);
-    .font-size(1.6rem, 24px);
-    color: @color-33;
-    vertical-align: middle;
+        &__price-link {
+          .size(185px,160px);
+          .absolute();
+          .pos(0,325px);
+          .align-center();
+        }
+          &__price-link a {
+            display: block;
+            padding-top: 117px;
+            .font-family(@font-bold);
+            .font-size(1.4rem,1.8rem);
+            color: #cfb000;
+            .uppercase();
+            text-decoration: underline;
+            .transition();
+          }
+          &__price-link a::before {
+            display: block;
+            .size(162px,103px);
+            .bg-image("../images/bg_pricelist.png");
+            .absolute();
+            .pos(-6px,10px);
+            content: '';
+          }
+          &__price-link a:hover {
+            .no-decor();
+          }
 
-    @media @screen-lg {
-      margin-right: 10px;
-      padding-left: 65px;
-    }
-    @media @screen-md {
-      margin-bottom: 15px;
-    }
-    @media @screen-xs {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
-  }
-  &__phone:before {
-    display: inline-block;
-    .bg-image("../img/spritesheet.png");
-    .bg();
-    background-position: -229px -149px;
-    width: 59px;
-    height: 59px;
-    .absolute();
-    .pos();
-    content: '';
-  }
+        &__mail-note {
+          width: 400px;
+          .relative();
+          margin-bottom: 45px;
+          padding-left: 84px;
+          .font-family(@font-trebuchet);
+          .font-size(1.8rem,normal);
+          color: @white;
+        }
+        &__mail-note::before {
+          display: block;
+          .absolute();
+          .pos();
+          background-image: url(../images/spritesheet.png);
+          background-position: -103px -117px;
+          width: 67px;
+          height: 36px;
+          content: '';
+        }
 
-  &__mail {
-    display: inline-block;
-    .relative();
-    margin-right: 54px;
-    padding-left: 77px;
-    padding-top: 6px;
-    .font-family(@font-reg);
-    .font-size(1.6rem, 24px);
-    color: @color-33;
-    vertical-align: middle;
-    .transition();
+        &__pay {
+          width: 230px;
+          display: inline-block;
+          margin-right: 84px;
+          vertical-align: top;
+        }
+          &__pay-title {
+            margin-bottom: 15px;
+            .font-family(@font-arial);
+            .font-size(1.3rem,normal);
+            color: @grey-67;
+          }
+          &__pay-sb {
+            display: inline-block;
+            background-image: url(../images/spritesheet.png);
+            background-position: -143px -182px;
+            width: 34px;
+            height: 33px;
+            margin-right: 25px;
+          }
+          &__pay-btc {
+            display: inline-block;
+            background-image: url(../images/spritesheet.png);
+            background-position: -170px -117px;
+            width: 90px;
+            height: 23px;
+            margin-right: 20px;
+            vertical-align: top;
+          }
+          &__pay-etc {
+            display: inline-block;
+            background-image: url(../images/spritesheet.png);
+            background-position: -103px -182px;
+            width: 40px;
+            height: 34px;
+            .relative();
+            top: -4px;
+          }
 
-    @media @screen-lg {
-      margin-right: 0;
-      padding-left: 65px;
-    }
-    @media @screen-xs {
-      margin-right: 0;
-    }
-  }
-  &__mail:before {
-    display: inline-block;
-    .bg-image("../img/spritesheet.png");
-    .bg();
-    background-position: -170px -149px;
-    width: 59px;
-    height: 59px;
-    .absolute();
-    .pos();
-    content: '';
-  }
-  &__mail a {
-    display: block;
-    color: @color-33;
-    .no-decor();
-  }
-  &__mail a:hover {
-    .color-lighten(@color-33);
-  }
+        &__deliver {
+          width: 115px;
+          display: inline-block;
+          vertical-align: top;
+        }
+          &__deliver-title {
+            margin-bottom: 15px;
+            .font-family(@font-arial);
+            .font-size(1.3rem,normal);
+            color: @grey-67;
+          }
+          &__deliver-icon {
+            display: inline-block;
+            background-image: url(../images/spritesheet.png);
+            background-position: -103px -153px;
+            width: 59px;
+            height: 29px;
+          }
 
-  &__bottom {
-    min-height: 158px;
-    .bg-color(@color-32);
-  }
-  &__bottom-inner {
-    .container();
-    padding-top: 54px;
-    .align-center();
-
-    @media @screen-xs {
-      padding-top: 40px;
-    }
-  }
   &__copyright {
-    .font-family(@font-light);
-    .font-size(1.2rem);
+    max-width: 370px;
+    margin: 64px auto 0;
+    .font-family(@font-arial);
+    .font-size(1.2rem,normal);
     color: @white;
-    opacity: 0.5;
+    opacity: 0.45;
+    .align-center();
   }
 }
 
-.block-hidden {
-  display: none;
-}
+@import "footer-menu";
