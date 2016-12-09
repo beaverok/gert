@@ -60,7 +60,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-icon_discount {
   background-image: url(../images/spritesheet.png);
-  background-position: -164px 0px;
+  background-position: 0px -117px;
   width: 103px;
   height: 103px;
 }
@@ -108,13 +108,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-icon_search-btn {
   background-image: url(../images/spritesheet.png);
-  background-position: -72px -220px;
+  background-position: -86px -220px;
   width: 15px;
   height: 15px;
 }
 .icon-icon_sold {
   background-image: url(../images/spritesheet.png);
-  background-position: 0px -117px;
+  background-position: -164px 0px;
   width: 103px;
   height: 103px;
 }
@@ -124,9 +124,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 14px;
   height: 19px;
 }
-.icon-icon_to-cart-pop {
+.icon-icon_to-cart-black {
   background-image: url(../images/spritesheet.png);
   background-position: -250px -182px;
+  width: 14px;
+  height: 19px;
+}
+.icon-icon_to-cart-pop {
+  background-image: url(../images/spritesheet.png);
+  background-position: -72px -220px;
   width: 14px;
   height: 19px;
 }

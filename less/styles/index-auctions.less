@@ -1,0 +1,89 @@
+.index-auctions {
+  .size(100%,609px);
+  .bg-image("../images/bg_auction-index.jpg");
+  background-position: center 0;
+
+  &__inner {
+    width: 100%;
+    max-width: 1458px;
+    height: 609px;
+    .relative();
+    margin: 0 auto;
+    padding-top: 64px;
+    .align-center();
+  }
+    &__h3 {
+      margin-bottom: 42px;
+      .font-family(@font-bold);
+      .font-size(3.6rem,2.6rem);
+      color: @red-039;
+      .uppercase();
+      .align-center();
+    }
+    &__list {
+      .ul-reset();
+      height: 423px;
+      .relative();
+      top: -23px;
+      padding-top: 13px;
+      overflow: hidden;
+    }
+      &__item {
+        display: inline-block;
+        width: 227px;
+      }
+
+    & .bx-wrapper {
+      margin: 0 auto;
+    }
+    & .bx-viewport {
+      max-width: 1214px;
+      margin: 0 auto;
+      padding-top: 23px;
+      z-index: 1000;
+    }
+    & .bx-controls {
+      width: 100%;
+      height: 609px;
+      max-width: 1458px;
+      .absolute();
+      .pos(0,50%);
+      z-index: 110;
+      margin-left: -729px;
+    }
+    & .bx-controls a {
+      display: block;
+      .absolute();
+      .pos(50%,0);
+      margin-top: -15px;
+      background-image: url(../images/spritesheet.png);
+      width: 20px;
+      height: 30px;
+    }
+    & .bx-controls .bx-prev {
+      background-position: -52px -220px;
+    }
+    & .bx-controls .bx-next {
+      left: auto;
+      right: 0;
+      background-position: -32px -220px;
+    }
+
+    &__all-link {
+      display: inline-block;
+      .relative();
+      z-index: 300;
+      margin-top: 24px;
+      .font-family(@font-bold);
+      .font-size(1.4rem,normal);
+      color: @white;
+      .uppercase();
+      text-decoration: underline;
+      .transition();
+    }
+    &__all-link:hover {
+      color: @red-039;
+    }
+}
+
+@import "auction-item";

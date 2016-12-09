@@ -1,0 +1,130 @@
+.auction-item {
+  display: inline-block;
+  width: 226px;
+  .align-center();
+  vertical-align: top;
+
+  &__foto {
+    .size(226px,226px);
+    .relative();
+    margin: 0 auto 49px;
+    padding-top: 20px;
+    .bg-color(@white);
+    .rounded(226px);
+    .align-center();
+  }
+    &__foto img {
+      max-width: 188px;
+      height: auto;
+    }
+
+    &__counter {
+      .size(100px,28px);
+      .bg-color(@white);
+      .rounded(5px);
+      .absolute();
+      bottom: -20px;
+      left: 50%;
+      z-index: 200;
+      margin-left: -50px;
+      .font-family(@font-bold);
+      .font-size(1.8rem,2.8rem);
+      color: @red-039;
+      .align-center();
+    }
+    &__icon-sold {
+      background-image: url(../images/spritesheet.png);
+      background-position: -164px 0px;
+      width: 103px;
+      height: 103px;
+      .absolute();
+      top: -6px;
+      right: 0;
+    }
+    &__icon-discount {
+      background-image: url(../images/spritesheet.png);
+      background-position: 0px -117px;
+      width: 103px;
+      height: 103px;
+      .absolute();
+      top: -13px;
+      right: 4px;
+      padding-top: 26px;
+      .font-family(@font-bold);
+      color: @white;
+      .align-center();
+      .uppercase();
+    }
+      &__discount-num {
+        display: inline-block;
+        margin-bottom: 4px;
+        .font-size(3.3rem,3rem);
+        vertical-align: top;
+      }
+      &__discount-percent {
+        .font-size(2rem,2rem);
+      }
+      &__discount-text {
+        display: block;
+        .font-size(1.7rem,1.6rem);
+      }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 16px;
+    .font-family(@font-bold);
+    .font-size(1.8rem,1.4rem);
+    color: @white;
+    .uppercase();
+    .no-decor();
+    .transition();
+  }
+  &__title:hover {
+    color: @red-039;
+  }
+
+  &__price {
+    margin-bottom: 18px;
+  }
+    &__price--new {
+      display: inline-block;
+      margin-right: 10px;
+      .font-family(@font-trebuchet);
+      .font-size(2.3rem,normal);
+      font-weight: bold;
+      color: @red-039;
+    }
+    &__price--old {
+      display: inline-block;
+      .font-family(@font-trebuchet);
+      .font-size(1.4rem,normal);
+      color: @grey-c2;
+      vertical-align: super;
+    }
+
+  &__cart-btn {
+    display: inline-block;
+    .size(134px,38px);
+    .relative();
+    padding-left: 40px;
+    border: 3px solid @yellow;
+    .font-family(@font-bold);
+    .font-size(1.4rem,3.2rem);
+    color: @white;
+    text-decoration: underline;
+    .uppercase();
+    .transition();
+  }
+  &__cart-btn::before {
+    .absolute();
+    .pos(6px,20px);
+    background-image: url(../images/spritesheet.png);
+    background-position: -236px -182px;
+    width: 14px;
+    height: 19px;
+    content: '';
+  }
+  &__cart-btn:hover {
+    border-color: @red-039;
+  }
+}

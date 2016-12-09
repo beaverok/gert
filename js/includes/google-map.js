@@ -1,11 +1,10 @@
-function g_map ()
+/*function g_map ()
 {
     var maps = $('.contacts-page__map');
 
     maps.each(function() {
         var current_map = $(this);
         var latlng = new google.maps.LatLng(current_map.attr('data-longitude'), current_map.attr('data-latitude'));
-        //var latlngmarker = new google.maps.LatLng(current_map.attr('data-marker-longitude'), current_map.attr('data-marker-latitude'));
         var point = current_map.attr('data-marker');
 
         var myOptions = {
@@ -25,7 +24,7 @@ function g_map ()
                 featureType: "all",
                 elementType: "all",
                 stylers: [
-                    { saturation: -100 } // <-- THIS
+                    { saturation: -100 }
                 ]
             }
         ];
@@ -37,7 +36,6 @@ function g_map ()
             icon: {
                 size: new google.maps.Size(208, 102),
                 origin: new google.maps.Point(0, 0),
-                //anchor: new google.maps.Point(100, 50),
                 url: point
             },
             position: latlng
@@ -52,4 +50,4 @@ function g_map ()
     });
 };
 
-google.maps.event.addDomListener(window, 'load', g_map);
+google.maps.event.addDomListener(window, 'load', g_map);*/

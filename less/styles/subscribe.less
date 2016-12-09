@@ -1,0 +1,99 @@
+.subscribe {
+  .size(100%,193px);
+  .bg-color(@grey-c2);
+
+  &__inner {
+    .container();
+    height: 123px;
+    .bg-color(@white);
+    .relative();
+    top: 34px;
+    padding: 0 30px 0 62px;
+  }
+    &__title {
+      width: 210px;
+      .relative();
+      top: 18px;
+      .font-family(@font-book);
+      .font-size(4.9rem,4.4rem);
+      color: @color;
+      .uppercase();
+    }
+    &__pic {
+      background-image: url(../images/spritesheet.png);
+      background-position: 0px 0px;
+      width: 164px;
+      height: 117px;
+      .absolute();
+      .pos(-56px,434px);
+    }
+    &__text {
+      width: 225px;
+      .absolute();
+      .pos(31px,317px);
+      .font-family(@font-bold);
+      .font-size(1.8rem,1.8rem);
+      color: @color;
+      .uppercase()
+    }
+      &__text span {
+        display: inline-block;
+        padding: 0 7px 0 10px;
+        .bg-color(@yellow);
+      }
+      &__text span:nth-of-type(1) {
+        width: 157px;
+        padding-top: 4px;
+      }
+      &__text span:nth-of-type(2) {
+        width: 157px;
+      }
+      &__text span:nth-of-type(3) {
+        padding-bottom: 3px;
+      }
+    &__input-wrap {
+      .size(332px,58px);
+      .absolute();
+      top: 32px;
+      right: 222px;
+    }
+    &__input {
+      .size(330px,56px);
+      border: 1px solid @grey-ce;
+      padding: 0 20px 0 74px;
+      .font-family(@font-trebuchet);
+      .font-size(1.5rem,normal);
+      color: @black-28;
+      font-weight: bold;
+    }
+    &__input-wrap::before {
+      display: block;
+      background-image: url(../images/spritesheet.png);
+      background-position: -188px -153px;
+      width: 31px;
+      height: 22px;
+      .absolute();
+      .pos(17px,21px);
+      content: '';
+    }
+    &__submit {
+      .size(175px,56px);
+      .absolute();
+      top: 32px;
+      right: 30px;
+      border: 3px solid @yellow;
+      .bg-color(@white);
+      .font-family(@font-bold);
+      .font-size(1.9rem,5rem);
+      color: @color;
+      .uppercase();
+      .align-center();
+      cursor: pointer;
+      .transition();
+    }
+    &__submit:hover {
+      .bg-color(@yellow);
+      color: @white;
+    }
+
+}

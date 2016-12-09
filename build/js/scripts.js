@@ -6287,14 +6287,13 @@ $('.fancy-pic').fancybox({
 });
 
 $('.fancy-link').fancybox();
-function g_map ()
+/*function g_map ()
 {
     var maps = $('.contacts-page__map');
 
     maps.each(function() {
         var current_map = $(this);
         var latlng = new google.maps.LatLng(current_map.attr('data-longitude'), current_map.attr('data-latitude'));
-        //var latlngmarker = new google.maps.LatLng(current_map.attr('data-marker-longitude'), current_map.attr('data-marker-latitude'));
         var point = current_map.attr('data-marker');
 
         var myOptions = {
@@ -6314,7 +6313,7 @@ function g_map ()
                 featureType: "all",
                 elementType: "all",
                 stylers: [
-                    { saturation: -100 } // <-- THIS
+                    { saturation: -100 }
                 ]
             }
         ];
@@ -6326,7 +6325,6 @@ function g_map ()
             icon: {
                 size: new google.maps.Size(208, 102),
                 origin: new google.maps.Point(0, 0),
-                //anchor: new google.maps.Point(100, 50),
                 url: point
             },
             position: latlng
@@ -6341,20 +6339,26 @@ function g_map ()
     });
 };
 
-google.maps.event.addDomListener(window, 'load', g_map);
+google.maps.event.addDomListener(window, 'load', g_map);*/
 $('.page-header').headtacular({ scrollPoint: 50 });
 $(".input--phone").mask("+7 (999) 999-99-99");
 $(document).ready(function () {
     $('.top-slider__slides').bxSlider({
         mode: 'fade',
-        pager: false
-    });
-
-    $('.solutions-slider__inner').bxSlider({
-        controls: true,
         pager: false,
         nextText: '',
         prevText: ''
+    });
+
+    $('.index-auctions__list').bxSlider({
+        controls: true,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        minSlides: 4,
+        maxSlides: 4,
+        slideWidth: 227,
+        slideMargin: 95
     });
 });
 

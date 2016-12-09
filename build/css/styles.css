@@ -964,6 +964,742 @@ a img {
   border: none;
   cursor: pointer;
 }
+.top-slider {
+  width: 100%;
+  height: 612px;
+  position: relative;
+}
+.top-slider__inner {
+  width: 100%;
+  max-width: 1920px;
+  height: 612px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .top-slider__inner {
+    width: 100%;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .top-slider__inner {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-slider__inner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    overflow: visible;
+  }
+}
+.top-slider__slides {
+  height: 612px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.top-slider__slide {
+  display: none;
+  height: 612px;
+  vertical-align: top;
+}
+.top-slider__slide:first-child {
+  display: inline-block;
+}
+.top-slider .bx-controls {
+  width: 100%;
+  height: 612px;
+  max-width: 1458px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 110;
+  margin-left: -729px;
+}
+.top-slider .bx-controls a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -15px;
+  background-image: url(../images/spritesheet.png);
+  width: 20px;
+  height: 30px;
+}
+.top-slider .bx-controls .bx-prev {
+  background-position: -52px -220px;
+}
+.top-slider .bx-controls .bx-next {
+  left: auto;
+  right: 0;
+  background-position: -32px -220px;
+}
+.top-slider__pic {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  margin-left: -960px;
+}
+.top-slider__text {
+  max-width: 395px;
+  position: relative;
+  z-index: 100;
+  margin: 147px auto 22px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 3.9rem;
+  line-height: normal;
+  color: #ff0039;
+  text-align: center;
+}
+.top-slider__num {
+  max-width: 300px;
+  position: relative;
+  z-index: 101;
+  margin: 0 auto 22px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 21rem;
+  line-height: 16rem;
+  color: #ff0039;
+  text-align: center;
+}
+.top-slider__note {
+  max-width: 260px;
+  position: relative;
+  z-index: 102;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+  opacity: 0.45;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=45);
+  filter: alpha(opacity=45);
+}
+.top-slider__present {
+  width: 1170px;
+  height: 542px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -585px;
+  z-index: 200;
+}
+.top-slider__present-inner {
+  width: 373px;
+  height: 542px;
+  background-image: url("../images/bg_slider-test-order.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.top-slider__present-text {
+  margin: 292px 0 0;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 2.6rem;
+  line-height: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.top-slider__present-text span {
+  display: block;
+  color: #82c214;
+}
+.top-slider__present-btn {
+  display: block;
+  width: 169px;
+  height: 54px;
+  margin: 25px auto 0;
+  border: 3px solid #82c214;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.9rem;
+  line-height: 5rem;
+  color: #82c214;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.top-slider__present-btn:hover {
+  background-color: #82c214;
+  color: #fff;
+}
+.safari .top-slider__inner {
+  top: 0;
+}
+.safari .top-slider__more-link {
+  background: none;
+  color: #fff;
+}
+.safari .top-slider__more-link span {
+  background-image: url("../img/bg_open-btn--empty.png");
+  color: #fff;
+}
+.index-advants {
+  min-height: 354px;
+}
+.index-advants__inner {
+  width: 1170px;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+  min-height: 354px;
+  padding-top: 55px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .index-advants__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .index-advants__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-advants__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.index-advants__h3 {
+  margin-bottom: 32px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.index-advants__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.index-advants__item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.index-advants__item:nth-of-type(1) {
+  width: 183px;
+  margin-right: 82px;
+}
+.index-advants__item:nth-of-type(2) {
+  width: 135px;
+  margin-right: 85px;
+}
+.index-advants__item:nth-of-type(3) {
+  width: 194px;
+  margin-right: 77px;
+}
+.index-advants__item:nth-of-type(4) {
+  width: 142px;
+  margin-right: 67px;
+}
+.index-advants__item:nth-of-type(5) {
+  width: 192px;
+}
+.index-advants__icon {
+  height: 94px;
+  margin-bottom: 31px;
+  text-align: center;
+}
+.index-advants__label {
+  margin: 0 auto 6px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #282828;
+  text-transform: uppercase;
+}
+.index-advants__note {
+  display: inline-block;
+  background-color: #f20303;
+  margin: 0 auto;
+  padding: 0 9px 2px;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: #fff;
+}
+.index-auctions {
+  width: 100%;
+  height: 609px;
+  background-image: url("../images/bg_auction-index.jpg");
+  background-position: center 0;
+}
+.index-auctions__inner {
+  width: 100%;
+  max-width: 1458px;
+  height: 609px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 64px;
+  text-align: center;
+}
+.index-auctions__h3 {
+  margin-bottom: 42px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+  color: #ff0039;
+  text-transform: uppercase;
+  text-align: center;
+}
+.index-auctions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 423px;
+  position: relative;
+  top: -23px;
+  padding-top: 13px;
+  overflow: hidden;
+}
+.index-auctions__item {
+  display: inline-block;
+  width: 227px;
+}
+.index-auctions .bx-wrapper {
+  margin: 0 auto;
+}
+.index-auctions .bx-viewport {
+  max-width: 1214px;
+  margin: 0 auto;
+  padding-top: 23px;
+  z-index: 1000;
+}
+.index-auctions .bx-controls {
+  width: 100%;
+  height: 609px;
+  max-width: 1458px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 110;
+  margin-left: -729px;
+}
+.index-auctions .bx-controls a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -15px;
+  background-image: url(../images/spritesheet.png);
+  width: 20px;
+  height: 30px;
+}
+.index-auctions .bx-controls .bx-prev {
+  background-position: -52px -220px;
+}
+.index-auctions .bx-controls .bx-next {
+  left: auto;
+  right: 0;
+  background-position: -32px -220px;
+}
+.index-auctions__all-link {
+  display: inline-block;
+  position: relative;
+  z-index: 300;
+  margin-top: 24px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+}
+.index-auctions__all-link:hover {
+  color: #ff0039;
+}
+.auction-item {
+  display: inline-block;
+  width: 226px;
+  text-align: center;
+  vertical-align: top;
+}
+.auction-item__foto {
+  width: 226px;
+  height: 226px;
+  position: relative;
+  margin: 0 auto 49px;
+  padding-top: 20px;
+  background-color: #fff;
+  border-radius: 226px;
+  text-align: center;
+}
+.auction-item__foto img {
+  max-width: 188px;
+  height: auto;
+}
+.auction-item__counter {
+  width: 100px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  z-index: 200;
+  margin-left: -50px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #ff0039;
+  text-align: center;
+}
+.auction-item__icon-sold {
+  background-image: url(../images/spritesheet.png);
+  background-position: -164px 0px;
+  width: 103px;
+  height: 103px;
+  position: absolute;
+  top: -6px;
+  right: 0;
+}
+.auction-item__icon-discount {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -117px;
+  width: 103px;
+  height: 103px;
+  position: absolute;
+  top: -13px;
+  right: 4px;
+  padding-top: 26px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.auction-item__discount-num {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 3.3rem;
+  line-height: 3rem;
+  vertical-align: top;
+}
+.auction-item__discount-percent {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.auction-item__discount-text {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.6rem;
+}
+.auction-item__title {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.auction-item__title:hover {
+  color: #ff0039;
+}
+.auction-item__price {
+  margin-bottom: 18px;
+}
+.auction-item__price--new {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 2.3rem;
+  line-height: normal;
+  font-weight: bold;
+  color: #ff0039;
+}
+.auction-item__price--old {
+  display: inline-block;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #c2c2c2;
+  vertical-align: super;
+}
+.auction-item__cart-btn {
+  display: inline-block;
+  width: 134px;
+  height: 38px;
+  position: relative;
+  padding-left: 40px;
+  border: 3px solid #ffd900;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  color: #fff;
+  text-decoration: underline;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+.auction-item__cart-btn::before {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  background-image: url(../images/spritesheet.png);
+  background-position: -236px -182px;
+  width: 14px;
+  height: 19px;
+  content: '';
+}
+.auction-item__cart-btn:hover {
+  border-color: #ff0039;
+}
+.subscribe {
+  width: 100%;
+  height: 193px;
+  background-color: #c2c2c2;
+}
+.subscribe__inner {
+  width: 1170px;
+  margin: 0 auto;
+  clear: both;
+  height: 123px;
+  background-color: #fff;
+  position: relative;
+  top: 34px;
+  padding: 0 30px 0 62px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .subscribe__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .subscribe__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .subscribe__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.subscribe__title {
+  width: 210px;
+  position: relative;
+  top: 18px;
+  font-family: "bebasneue_book", Helvetica, Arial, sans-serif;
+  font-size: 4.9rem;
+  line-height: 4.4rem;
+  color: #000;
+  text-transform: uppercase;
+}
+.subscribe__pic {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 164px;
+  height: 117px;
+  position: absolute;
+  top: -56px;
+  left: 434px;
+}
+.subscribe__text {
+  width: 225px;
+  position: absolute;
+  top: 31px;
+  left: 317px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #000;
+  text-transform: uppercase;
+}
+.subscribe__text span {
+  display: inline-block;
+  padding: 0 7px 0 10px;
+  background-color: #ffd900;
+}
+.subscribe__text span:nth-of-type(1) {
+  width: 157px;
+  padding-top: 4px;
+}
+.subscribe__text span:nth-of-type(2) {
+  width: 157px;
+}
+.subscribe__text span:nth-of-type(3) {
+  padding-bottom: 3px;
+}
+.subscribe__input-wrap {
+  width: 332px;
+  height: 58px;
+  position: absolute;
+  top: 32px;
+  right: 222px;
+}
+.subscribe__input {
+  width: 330px;
+  height: 56px;
+  border: 1px solid #cecece;
+  padding: 0 20px 0 74px;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: #282828;
+  font-weight: bold;
+}
+.subscribe__input-wrap::before {
+  display: block;
+  background-image: url(../images/spritesheet.png);
+  background-position: -188px -153px;
+  width: 31px;
+  height: 22px;
+  position: absolute;
+  top: 17px;
+  left: 21px;
+  content: '';
+}
+.subscribe__submit {
+  width: 175px;
+  height: 56px;
+  position: absolute;
+  top: 32px;
+  right: 30px;
+  border: 3px solid #ffd900;
+  background-color: #fff;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.9rem;
+  line-height: 5rem;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.subscribe__submit:hover {
+  background-color: #ffd900;
+  color: #fff;
+}
+.index-popular {
+  padding: 77px 0 42px;
+  background-color: #ffd900;
+}
+.index-popular__inner {
+  width: 1212px;
+  position: relative;
+  margin: 0 auto;
+}
+.index-popular__h3 {
+  margin-bottom: 32px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.popular-item {
+  display: inline-block;
+  width: 226px;
+  margin-bottom: 65px;
+  margin-right: 98px;
+  text-align: center;
+  vertical-align: top;
+}
+.popular-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+.popular-item__foto {
+  display: inline-block;
+  width: 226px;
+  height: 226px;
+  position: relative;
+  margin: 0 auto 30px;
+  background-color: #fff;
+  border-radius: 226px;
+  text-align: center;
+  line-height: 226px;
+}
+.popular-item__foto img {
+  max-width: 125px;
+  height: auto;
+  vertical-align: middle;
+}
+.popular-item__title {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4rem;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.popular-item__title:hover {
+  color: #ff0039;
+}
+.popular-item__price {
+  margin-bottom: 19px;
+}
+.popular-item__price--new {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 2.3rem;
+  line-height: normal;
+  font-weight: bold;
+  color: #ff0039;
+}
+.popular-item__price--old {
+  display: inline-block;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #fff;
+  vertical-align: super;
+}
+.popular-item__cart-btn {
+  display: inline-block;
+  width: 134px;
+  height: 38px;
+  position: relative;
+  padding-left: 40px;
+  border: 3px solid #fff;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+.popular-item__cart-btn::before {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  background-image: url(../images/spritesheet.png);
+  background-position: -250px -182px;
+  width: 14px;
+  height: 19px;
+  content: '';
+}
+.popular-item__cart-btn:hover {
+  border-color: #ff0039;
+}
 .page-footer {
   height: 367px;
   background-image: url("../images/bg_footer.jpg");

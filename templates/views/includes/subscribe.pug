@@ -1,10 +1,12 @@
 .subscribe
-    .subscribe__title Подпишись <br>на новости
-    .subscribe__pic
-    .subscribe__text
-        span получай информацию
-        span о скидках и новинках
-        span в гастрономе gerthshop.pro
+    .subscribe__inner
+        .subscribe__title Подпишись <br>на новости
+        .subscribe__pic
+        .subscribe__text
+            span получай информацию<br>
+            span о скидках и новинках<br>
+            span в гастрономе gerthshop.pro
 
-    input.subscribe__input(type="text", placeholder="E-mail")
-    input.subscribe__submit(type="submit", value="подписаться")
+        .subscribe__input-wrap
+            input.subscribe__input(type="text", placeholder="E-mail")
+        input.subscribe__submit(type="submit", value="подписаться")

@@ -1,0 +1,66 @@
+.index-advants {
+  min-height: 354px;
+
+  &__inner {
+    .container();
+    .relative();
+    min-height: 354px;
+    padding-top: 55px;
+  }
+    &__h3 {
+      margin-bottom: 32px;
+      .font-family(@font-bold);
+      .font-size(3.6rem,2.6rem);
+      color: @color;
+      .uppercase();
+      .align-center();
+    }
+    &__list {
+      .ul-reset();
+    }
+      &__item {
+        display: inline-block;
+        vertical-align: top;
+        .align-center();
+      }
+      &__item:nth-of-type(1) {
+        width: 183px;
+        margin-right: 82px;
+      }
+      &__item:nth-of-type(2) {
+        width: 135px;
+        margin-right: 85px;
+      }
+      &__item:nth-of-type(3) {
+        width: 194px;
+        margin-right: 77px;
+      }
+      &__item:nth-of-type(4) {
+        width: 142px;
+        margin-right: 67px;
+      }
+      &__item:nth-of-type(5) {
+        width: 192px;
+      }
+        &__icon {
+          height: 94px;
+          margin-bottom: 31px;
+          .align-center();
+        }
+        &__label {
+          margin: 0 auto 6px;
+          .font-family(@font-bold);
+          .font-size(1.8rem,2.6rem);
+          color: @black-28;
+          .uppercase();
+        }
+        &__note {
+          display: inline-block;
+          .bg-color(@red);
+          margin: 0 auto;
+          padding: 0 9px 2px;
+          .font-family(@font-tahoma);
+          .font-size(1.5rem,normal);
+          color: @white;
+        }
+}
