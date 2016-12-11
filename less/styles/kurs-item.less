@@ -1,0 +1,81 @@
+.kurs-item {
+  display: inline-block;
+  width: 315px;
+  .align-center();
+  vertical-align: top;
+
+  &__foto {
+    .size(265px,265px);
+    .relative();
+    margin: 0 auto 30px;
+    .bg-color(@white);
+    .rounded(265px);
+    .align-center();
+  }
+    &__foto img {
+      max-width: 303px;
+      height: auto;
+      .absolute();
+      .pos(-23px,-24px);
+    }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 12px;
+    .font-family(@font-bold);
+    .font-size(3rem,3rem);
+    color: @white;
+    .uppercase();
+    .no-decor();
+    .transition();
+  }
+  &__title:hover {
+    color: @red-039;
+  }
+    &__subtitle {
+      display: block;
+      margin-top: 12px;
+      .font-family(@font-bold);
+      .font-size(1.8rem,1.6rem);
+      color: @white;
+      .uppercase();
+      .no-decor();
+      .transition();
+    }
+
+
+  &__price {
+    margin-bottom: 18px;
+    .font-family(@font-trebuchet);
+    .font-size(3.9rem,normal);
+    font-weight: bold;
+    color: @red-039;
+    .align-center();
+  }
+
+  &__cart-btn {
+    display: inline-block;
+    .size(134px,38px);
+    .relative();
+    padding-left: 40px;
+    border: 3px solid @yellow;
+    .font-family(@font-bold);
+    .font-size(1.4rem,3.2rem);
+    color: @white;
+    text-decoration: underline;
+    .uppercase();
+    .transition();
+  }
+  &__cart-btn::before {
+    .absolute();
+    .pos(6px,20px);
+    background-image: url(../images/spritesheet.png);
+    background-position: -236px -182px;
+    width: 14px;
+    height: 19px;
+    content: '';
+  }
+  &__cart-btn:hover {
+    border-color: @red-039;
+  }
+}

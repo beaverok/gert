@@ -1,0 +1,31 @@
+.index-reviews {
+  .bg-color(@yellow);
+  padding: 61px 0;
+
+  &__inner {
+    .container();
+    .align-center();
+  }
+    &__h3 {
+      margin-bottom: 66px;
+      .font-family(@font-bold);
+      .font-size(3.6rem,2.6rem);
+      color: @color;
+      .uppercase();
+      .align-center();
+    }
+    &__all-link {
+      .relative();
+      top: -20px;
+      .font-family(@font-bold);
+      .font-size(1.8rem,1.8rem);
+      color: @color;
+      .uppercase();
+      text-decoration: underline;
+      .transition();
+    }
+    &__all-link:hover {
+      color: @red-039;
+    }
+}
+@import "reviews-item";

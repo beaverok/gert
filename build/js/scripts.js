@@ -6360,6 +6360,28 @@ $(document).ready(function () {
         slideWidth: 227,
         slideMargin: 95
     });
+
+    $('.index-kurs__list').bxSlider({
+        controls: true,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        minSlides: 3,
+        maxSlides: 3,
+        slideWidth: 315,
+        slideMargin: 125
+    });
+
+    $('.index-brands__list').bxSlider({
+        controls: true,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        minSlides: 5,
+        maxSlides: 5,
+        slideWidth: 134,
+        slideMargin: 130
+    });
 });
 
 $(".solutions-tabs__link").click(function() {

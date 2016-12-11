@@ -1,50 +1,55 @@
-.index-auctions {
-  .size(100%,609px);
-  .bg-image("../images/bg_auction-index.jpg");
+.index-brands {
+  .size(100%,305px);
+  .bg-image("../images/bg_brands-slider.jpg");
   background-position: center 0;
 
   &__inner {
     width: 100%;
     max-width: 1458px;
-    height: 609px;
+    height: 305px;
     .relative();
     margin: 0 auto;
-    padding-top: 64px;
+    padding-top: 65px;
     .align-center();
   }
     &__h3 {
-      margin-bottom: 29px;
+      margin-bottom: 50px;
       .font-family(@font-bold);
       .font-size(3.6rem,2.6rem);
-      color: @red-039;
+      color: @color;
       .uppercase();
       .align-center();
     }
     &__list {
       .ul-reset();
-      height: 423px;
+      height: 100px;
       .relative();
-      top: -23px;
-      padding-top: 13px;
       overflow: hidden;
     }
       &__item {
         display: inline-block;
-        width: 227px;
+        width: 134px;
+        height: 94px;
+        margin-right: 130px;
+        line-height: 94px;
       }
+        &__logo {
+          max-width: 134px;
+          max-height: 94px;
+          vertical-align: middle;
+        }
 
     & .bx-wrapper {
       margin: 0 auto;
     }
     & .bx-viewport {
-      max-width: 1214px;
+      max-width: 1185px;
       margin: 0 auto;
-      padding-top: 23px;
       z-index: 1000;
     }
     & .bx-controls {
       width: 100%;
-      height: 609px;
+      height: 305px;
       max-width: 1458px;
       .absolute();
       .pos(0,50%);
@@ -54,36 +59,18 @@
     & .bx-controls a {
       display: block;
       .absolute();
-      .pos(50%,0);
-      margin-top: -15px;
+      .pos(179px,0);
       background-image: url(../images/spritesheet.png);
       width: 20px;
       height: 30px;
     }
     & .bx-controls .bx-prev {
-      background-position: -72px -220px;
+      background-position: -92px -220px;
     }
     & .bx-controls .bx-next {
       left: auto;
       right: 0;
-      background-position: -32px -220px;
+      background-position: -52px -220px;
     }
 
-    &__all-link {
-      display: inline-block;
-      .relative();
-      z-index: 300;
-      margin-top: 24px;
-      .font-family(@font-bold);
-      .font-size(1.4rem,normal);
-      color: @white;
-      .uppercase();
-      text-decoration: underline;
-      .transition();
-    }
-    &__all-link:hover {
-      color: @red-039;
-    }
 }
-
-@import "auction-item";

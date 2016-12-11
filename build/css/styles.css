@@ -957,7 +957,7 @@ a img {
   top: 15px;
   right: 16px;
   background-image: url(../images/spritesheet.png);
-  background-position: -72px -220px;
+  background-position: -126px -220px;
   background-color: transparent;
   width: 15px;
   height: 15px;
@@ -1030,7 +1030,7 @@ a img {
   height: 30px;
 }
 .top-slider .bx-controls .bx-prev {
-  background-position: -52px -220px;
+  background-position: -72px -220px;
 }
 .top-slider .bx-controls .bx-next {
   left: auto;
@@ -1250,7 +1250,7 @@ a img {
   text-align: center;
 }
 .index-auctions__h3 {
-  margin-bottom: 42px;
+  margin-bottom: 29px;
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
   font-size: 3.6rem;
   line-height: 2.6rem;
@@ -1302,7 +1302,7 @@ a img {
   height: 30px;
 }
 .index-auctions .bx-controls .bx-prev {
-  background-position: -52px -220px;
+  background-position: -72px -220px;
 }
 .index-auctions .bx-controls .bx-next {
   left: auto;
@@ -1465,14 +1465,14 @@ a img {
 .subscribe {
   width: 100%;
   height: 193px;
-  background-color: #c2c2c2;
+  background-image: url("../images/bg_subscribe.jpg");
 }
 .subscribe__inner {
   width: 1170px;
   margin: 0 auto;
   clear: both;
   height: 123px;
-  background-color: #fff;
+  background-image: url("../images/bg_subscribe-inner.jpg");
   position: relative;
   top: 34px;
   padding: 0 30px 0 62px;
@@ -1700,6 +1700,351 @@ a img {
 .popular-item__cart-btn:hover {
   border-color: #ff0039;
 }
+.index-kurs {
+  width: 100%;
+  height: 733px;
+  background-image: url("../images/bg_auction-index.jpg");
+  background-position: center 0;
+  background-repeat: repeat-y;
+}
+.index-kurs__inner {
+  width: 100%;
+  max-width: 1458px;
+  height: 733px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 75px;
+  text-align: center;
+}
+.index-kurs__h3 {
+  margin-bottom: 42px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.index-kurs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 490px;
+  position: relative;
+  padding-top: 23px;
+  overflow: hidden;
+}
+.index-kurs__item {
+  display: inline-block;
+  width: 315px;
+  height: 490px;
+  margin-right: 125px;
+}
+.index-kurs .bx-wrapper {
+  height: 490px;
+  margin: 0 auto;
+}
+.index-kurs .bx-viewport {
+  max-width: 1200px;
+  height: 490px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+.index-kurs .bx-controls {
+  width: 100%;
+  height: 733px;
+  max-width: 1458px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 110;
+  margin-left: -729px;
+}
+.index-kurs .bx-controls a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -15px;
+  background-image: url(../images/spritesheet.png);
+  width: 20px;
+  height: 30px;
+}
+.index-kurs .bx-controls .bx-prev {
+  background-position: -72px -220px;
+}
+.index-kurs .bx-controls .bx-next {
+  left: auto;
+  right: 0;
+  background-position: -32px -220px;
+}
+.kurs-item {
+  display: inline-block;
+  width: 315px;
+  text-align: center;
+  vertical-align: top;
+}
+.kurs-item__foto {
+  width: 265px;
+  height: 265px;
+  position: relative;
+  margin: 0 auto 30px;
+  background-color: #fff;
+  border-radius: 265px;
+  text-align: center;
+}
+.kurs-item__foto img {
+  max-width: 303px;
+  height: auto;
+  position: absolute;
+  top: -23px;
+  left: -24px;
+}
+.kurs-item__title {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.kurs-item__title:hover {
+  color: #ff0039;
+}
+.kurs-item__subtitle {
+  display: block;
+  margin-top: 12px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.kurs-item__price {
+  margin-bottom: 18px;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 3.9rem;
+  line-height: normal;
+  font-weight: bold;
+  color: #ff0039;
+  text-align: center;
+}
+.kurs-item__cart-btn {
+  display: inline-block;
+  width: 134px;
+  height: 38px;
+  position: relative;
+  padding-left: 40px;
+  border: 3px solid #ffd900;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  color: #fff;
+  text-decoration: underline;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+.kurs-item__cart-btn::before {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  background-image: url(../images/spritesheet.png);
+  background-position: -236px -182px;
+  width: 14px;
+  height: 19px;
+  content: '';
+}
+.kurs-item__cart-btn:hover {
+  border-color: #ff0039;
+}
+.index-reviews {
+  background-color: #ffd900;
+  padding: 61px 0;
+}
+.index-reviews__inner {
+  width: 1170px;
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .index-reviews__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .index-reviews__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-reviews__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.index-reviews__h3 {
+  margin-bottom: 66px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.index-reviews__all-link {
+  position: relative;
+  top: -20px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+}
+.index-reviews__all-link:hover {
+  color: #ff0039;
+}
+.reviews-item {
+  display: inline-block;
+  width: 358px;
+  margin-right: 42px;
+  margin-bottom: 79px;
+  text-align: left;
+  vertical-align: top;
+}
+.reviews-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.reviews-item__foto {
+  display: inline-block;
+  width: 99px;
+  height: 99px;
+  margin-right: 19px;
+  border-radius: 99px;
+  line-height: 99px;
+  vertical-align: top;
+}
+.reviews-item__foto img {
+  max-width: 99px;
+  height: auto;
+  vertical-align: middle;
+}
+.reviews-item__right {
+  display: inline-block;
+  max-width: 235px;
+  vertical-align: top;
+}
+.reviews-item__name {
+  margin-bottom: 13px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4rem;
+  color: #000;
+  text-transform: uppercase;
+}
+.reviews-item__rating {
+  width: 97px;
+  height: 14px;
+  margin-bottom: 8px;
+  background-image: url("../images/bg_stars.png");
+}
+.reviews-item__text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #000;
+}
+.index-brands {
+  width: 100%;
+  height: 305px;
+  background-image: url("../images/bg_brands-slider.jpg");
+  background-position: center 0;
+}
+.index-brands__inner {
+  width: 100%;
+  max-width: 1458px;
+  height: 305px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 65px;
+  text-align: center;
+}
+.index-brands__h3 {
+  margin-bottom: 50px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.index-brands__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.index-brands__item {
+  display: inline-block;
+  width: 134px;
+  height: 94px;
+  margin-right: 130px;
+  line-height: 94px;
+}
+.index-brands__logo {
+  max-width: 134px;
+  max-height: 94px;
+  vertical-align: middle;
+}
+.index-brands .bx-wrapper {
+  margin: 0 auto;
+}
+.index-brands .bx-viewport {
+  max-width: 1185px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+.index-brands .bx-controls {
+  width: 100%;
+  height: 305px;
+  max-width: 1458px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 110;
+  margin-left: -729px;
+}
+.index-brands .bx-controls a {
+  display: block;
+  position: absolute;
+  top: 179px;
+  left: 0;
+  background-image: url(../images/spritesheet.png);
+  width: 20px;
+  height: 30px;
+}
+.index-brands .bx-controls .bx-prev {
+  background-position: -92px -220px;
+}
+.index-brands .bx-controls .bx-next {
+  left: auto;
+  right: 0;
+  background-position: -52px -220px;
+}
 .page-footer {
   height: 367px;
   background-image: url("../images/bg_footer.jpg");
@@ -1902,4 +2247,83 @@ a img {
 }
 .footer-menu__link:hover {
   text-decoration: none;
+}
+.side-buttons {
+  width: 41px;
+  position: fixed;
+  top: 38%;
+  right: 17px;
+  z-index: 10000;
+}
+.side-buttons__button {
+  width: 41px;
+  height: 142px;
+  position: relative;
+  margin-bottom: 5px;
+  background-color: #ffd900;
+  border-radius: 21px;
+}
+.side-buttons__button-inner {
+  display: block;
+  width: 41px;
+  height: 142px;
+}
+.side-buttons__label {
+  display: block;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: #282828;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transform: rotate(-45deg);
+  /* не забываем префиксные свойства */
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-90deg);
+  position: absolute;
+}
+.side-buttons__cart .side-buttons__label {
+  right: -9px;
+  bottom: 46px;
+}
+.side-buttons__consult .side-buttons__label {
+  right: -17px;
+  bottom: 51px;
+  font-size: 1.2rem;
+}
+.side-buttons__consult::before {
+  display: block;
+  background-image: url(../images/spritesheet.png);
+  background-position: -177px -182px;
+  width: 26px;
+  height: 25px;
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  content: '';
+}
+.side-buttons__cart-inner {
+  background-image: url(../images/spritesheet.png);
+  background-position: -162px -153px;
+  width: 26px;
+  height: 27px;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+}
+.side-buttons__cart-num {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
 }

@@ -1,0 +1,72 @@
+.side-buttons {
+  width: 41px;
+  position: fixed;
+  top: 38%;
+  right: 17px;
+  z-index: 10000;
+
+  &__button {
+    .size(41px,142px);
+    .relative();
+    margin-bottom: 5px;
+    .bg-color(@yellow);
+    .rounded(21px);
+  }
+    &__button-inner {
+      display: block;
+      .size(41px,142px);
+    }
+      &__label {
+        display: block;
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem, normal);
+        color: @black-28;
+        font-weight: bold;
+        .no-decor();
+        -webkit-transform: rotate(-45deg); /* не забываем префиксные свойства */
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-90deg);
+        .absolute();
+      }
+      &__cart &__label {
+        right: -9px;
+        bottom: 46px;
+      }
+      &__consult &__label {
+        right: -17px;
+        bottom: 51px;
+        font-size: 1.2rem;
+      }
+      &__consult::before {
+        display: block;
+        background-image: url(../images/spritesheet.png);
+        background-position: -177px -182px;
+        width: 26px;
+        height: 25px;
+        .absolute();
+        .pos(9px,7px);
+        content: '';
+      }
+
+      &__cart-inner {
+        background-image: url(../images/spritesheet.png);
+        background-position: -162px -153px;
+        width: 26px;
+        height: 27px;
+        .absolute();
+        .pos(11px,10px);
+      }
+        &__cart-num {
+          display: block;
+          .size(16px,16px);
+          .absolute();
+          .pos(7px,10px);
+          .font-family(@font-trebuchet);
+          .font-size(10px,16px);
+          color: @white;
+          font-weight: bold;
+          .align-center();
+        }
+}
