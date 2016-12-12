@@ -3,9 +3,80 @@
   &__top::after {
     display: block;
     width: 100%;
+    margin-bottom: 87px;
     clear: both;
     content: '';
   }
+
+  &__descr {
+    width: 100%;
+    min-height: 440px;
+    .bg-image("../images/bg_auction-index.jpg");
+    background-position: center top;
+    background-repeat: repeat-y;
+  }
+    &__descr-inner {
+      .container();
+      padding-top: 73px;
+    }
+    &__h3 {
+      margin-bottom: 36px;
+      .font-family(@font-bold);
+      .font-size(3.6rem,3rem);
+      color: @color;
+      .uppercase();
+      .align-center();
+    }
+    &__descr-h3 {
+      margin-bottom: 52px;
+      color: @white;
+    }
+    &__descr-text {
+      .font-family(@font-tahoma);
+      .font-size(1.5rem,23px);
+      color: @white;
+      opacity: 0.55;
+    }
+      &__descr-text p {
+        display: inline-block;
+        max-width: 570px;
+        margin-right: 24px;
+      }
+      &__descr-text p:last-child {
+        margin-right: 0;
+      }
+
+    &__use {
+      .size(100%,315px);
+      .bg-color(@white);
+    }
+      &__use-inner {
+        .container();
+        padding-top: 73px;
+      }
+        &__use-text {
+          max-width: 990px;
+          margin: 0 auto;
+          .font-family(@font-tahoma);
+          .font-size(1.5rem,21px);
+          color: #2c2c2c;
+          .align-center();
+        }
+
+    &__reviews {
+      .size(100%,auto);
+    }
+      &__reviews-inner {
+        .container();
+        padding: 73px 0 49px;
+      }
+        &__reviews-list {
+          width: 1026px;
+          margin: 27px auto 61px;
+          padding-bottom: 39px;
+          border-bottom: 1px solid @color;
+        }
 }
 
 @import "product";
+@import "reviews-list";

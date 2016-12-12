@@ -90,17 +90,26 @@
         &__stars-inner {
           width: 80%;
           height: 14px;
+          .bg-image("../images/stars.png");
+          background-position: 0 -21px;
         }
 
       &__anons {
         display: inline-block;
+        max-height: 138px;
         margin-bottom: 27px;
-        padding-left: 9px;
-        .bg-color(@white);
+        padding: 5px 9px;
+        //background: @white;
         .font-family(@font-tahoma);
         .font-size(1.5rem,21px);
         color: #2c2c2c;
+        overflow: hidden;
       }
+        &__anons span {
+          background: @white;
+          box-shadow: -6px 0 0 2px @white, 6px 0 0 2px @white;
+          padding: 2px 0 3px;
+        }
 
       &__more {
         display: inline-block;
@@ -115,4 +124,143 @@
       &__more:hover {
         color: @red-039;
       }
+
+      &__advant-list {
+        .ul-reset();
+      }
+        &__advant-item {
+          display: inline-block;
+          .relative();
+          .bg-color(@white);
+          margin-bottom: 14px;
+          padding: 0 16px 0 25px;
+          .font-family(@font-tahoma);
+          .font-size(1.5rem,2.7rem);
+          color: #2c2c2c;
+        }
+          &__advant-item span::before {
+            display: block;
+            .size(5px,5px);
+            .bg-color(@red-039);
+            .absolute();
+            .pos(11px,10px);
+            content: '';
+          }
+
+      &__avail {
+        .relative();
+        margin-top: 25px;
+        padding-left: 50px;
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem,15px);
+        color: @black-28;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      &__avail::before {
+        display: block;
+        background-image: url(../images/spritesheet.png);
+        background-position: -103px -182px;
+        width: 43px;
+        height: 33px;
+        .absolute();
+        top: -13px;
+        left: 0;
+        content: '';
+      }
+
+      &__pay-block {
+        margin-top: 28px;
+        padding-bottom: 27px;
+        border-bottom: 1px solid @color;
+      }
+        &__price {
+          display: inline-block;
+          margin-right: 30px;
+          .font-family(@font-trebuchet);
+          .font-size(2.8rem,2rem);
+          color: @red;
+          font-weight: bold;
+          vertical-align: middle;
+        }
+        &__quan {
+          display: inline-block;
+          .size(94px,30px);
+          margin-right: 40px;
+          .bg-color(@white);
+          .font-family(@font-trebuchet);
+          .font-size(1.5rem,normal);
+          color: @black-28;
+          font-weight: bold;
+        }
+          &__minus, &__plus {
+            display: inline-block;
+            .size(30px,30px);
+            margin-right: -4px;
+            line-height: 30px;
+            .align-center();
+            vertical-align: middle;
+            cursor: pointer;
+          }
+          &__quan-input {
+            display: inline-block;
+            .size(34px,30px);
+            border: none;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            .align-center();
+          }
+
+    &__to-cart {
+      display: inline-block;
+      .size(134px,44px);
+      .relative();
+      margin-right: 11px;
+      padding-left: 47px;
+      border: 3px solid @red-039;
+      .font-family(@font-bold);
+      .font-size(1.4rem,3.6rem);
+      color: @color;
+      text-decoration: underline;
+      .uppercase();
+      .transition();
+    }
+    &__to-cart::before {
+      .absolute();
+      .pos(6px,12px);
+      background-image: url(../images/spritesheet.png);
+      background-position: -126px -220px;
+      width: 17px;
+      height: 23px;
+      content: '';
+    }
+    &__to-cart:hover {
+      border-color: @white;
+    }
+
+    &__to-fav {
+      display: inline-block;
+      .size(144px,44px);
+      .relative();
+      padding-left: 48px;
+      border: 3px solid @white;
+      .font-family(@font-bold);
+      .font-size(1.4rem,3.6rem);
+      color: @color;
+      text-decoration: underline;
+      .uppercase();
+      .transition();
+    }
+    &__to-fav::before {
+      .absolute();
+      .pos(8px,12px);
+      background-image: url(../images/spritesheet.png);
+      background-position: -97px -220px;
+      width: 25px;
+      height: 22px;
+      content: '';
+    }
+    &__to-fav:hover {
+      border-color: @red-039;
+    }
 }

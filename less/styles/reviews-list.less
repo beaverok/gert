@@ -1,0 +1,172 @@
+.reviews-list {
+
+  &__item {
+    .relative();
+    margin-bottom: 42px;
+    padding-top: 40px;
+    padding-left: 115px;
+    border-top: 1px solid @color;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+    &__item-foto {
+      .size(83px,83px);
+      .absolute();
+      .pos(45px,0);
+      border: 2px solid @white;
+      .rounded(83px);
+      .align-center();
+      line-height: 83px;
+    }
+      &__item-foto img {
+        max-width: 83px;
+        max-height: 83px;
+      }
+
+    &__item-top {
+      margin-bottom: 16px;
+    }
+      &__item-name {
+        display: inline-block;
+        margin-right: 14px;
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem,15px);
+        color: #0e0e0e;
+        font-weight: bold;
+        vertical-align: top;
+      }
+      &__item-date {
+        display: inline-block;
+        margin-right: 14px;
+        .font-family(@font-tahoma);
+        .font-size(1.5rem,17px);
+        color: @black-2c;
+        vertical-align: top;
+      }
+
+      &__stars {
+        display: inline-block;
+        .size(97px,14px);
+        .relative();
+        top: 2px;
+        .bg-image("../images/stars.png");
+      }
+      &__stars-inner {
+        width: 100%;
+        height: 14px;
+        .bg-image("../images/stars.png");
+        background-position: 0 -21px;
+      }
+
+      &__item-pos, &__item-neg {
+        margin-bottom: 10px;
+        .font-family(@font-tahoma);
+        .font-size(1.5rem,21px);
+        color: @black-2c;
+      }
+      &__item-pos span, &__item-neg span {
+        .font-family(@font-trebuchet);
+        color: #0e0e0e;
+        font-weight: bold;
+      }
+
+      &__item-text {
+        margin-bottom: 12px;
+        .font-family(@font-tahoma);
+        .font-size(1.5rem,21px);
+        color: @black-2c;
+      }
+
+      &__item-bot {
+        margin-top: 20px;
+      }
+        &__item-quote {
+          display: inline-block;
+          .relative();
+          margin-right: 20px;
+          padding-left: 33px;
+          .font-family(@font-tahoma);
+          .font-size(1.5rem,normal);
+          color: @black-2c;
+          text-decoration: underline;
+          .transition();
+        }
+        &__item-quote::before {
+          background-image: url(../images/spritesheet.png);
+          background-position: -267px -146px;
+          width: 17px;
+          height: 16px;
+          .absolute();
+          .pos();
+          content: '';
+        }
+        &__item-quote:hover {
+          color: @red-039;
+        }
+
+        &__item-answer {
+          display: inline-block;
+          .relative();
+          margin-right: 38px;
+          padding-left: 27px;
+          .font-family(@font-tahoma);
+          .font-size(1.5rem,normal);
+          color: @black-2c;
+          text-decoration: underline;
+          .transition();
+        }
+        &__item-answer::before {
+          background-image: url(../images/spritesheet.png);
+          background-position: -267px -234px;
+          width: 17px;
+          height: 13px;
+          .absolute();
+          .pos(3px,0);
+          content: '';
+        }
+        &__item-answer:hover {
+          color: @red-039;
+        }
+
+        &__item-plus {
+          display: inline-block;
+          .relative();
+          margin-right: 15px;
+          padding-left: 33px;
+          .font-family(@font-tahoma);
+          .font-size(1.5rem,normal);
+          color: @black-2c;
+        }
+        &__item-plus::before {
+          background-image: url(../images/spritesheet.png);
+          background-position: -22px -264px;
+          width: 22px;
+          height: 23px;
+          .absolute();
+          .pos(-8px,0);
+          content: '';
+        }
+
+        &__item-minus {
+          display: inline-block;
+          .relative();
+          padding-left: 28px;
+          .font-family(@font-tahoma);
+          .font-size(1.5rem,normal);
+          color: @black-2c;
+        }
+        &__item-minus::before {
+          background-image: url(../images/spritesheet.png);
+          background-position: 0px -264px;
+          width: 22px;
+          height: 23px;
+          .absolute();
+          .pos(-1px,0);
+          content: '';
+        }
+
+  &__item-feedback {
+    margin-left: 100px;
+  }
+}
