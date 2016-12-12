@@ -28,27 +28,51 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 164px;
   height: 117px;
 }
+.icon-icon_answer {
+  background-image: url(../images/spritesheet.png);
+  background-position: -267px -234px;
+  width: 17px;
+  height: 13px;
+}
+.icon-icon_arrow-breadcrumbs {
+  background-image: url(../images/spritesheet.png);
+  background-position: -281px -162px;
+  width: 6px;
+  height: 9px;
+}
 .icon-icon_arrow-left-b {
   background-image: url(../images/spritesheet.png);
-  background-position: -92px -220px;
+  background-position: -267px -90px;
   width: 20px;
   height: 30px;
 }
+.icon-icon_arrow-left-red {
+  background-image: url(../images/spritesheet.png);
+  background-position: -267px -247px;
+  width: 11px;
+  height: 16px;
+}
 .icon-icon_arrow-left {
   background-image: url(../images/spritesheet.png);
-  background-position: -72px -220px;
+  background-position: -267px -60px;
   width: 20px;
   height: 30px;
 }
 .icon-icon_arrow-right-b {
   background-image: url(../images/spritesheet.png);
-  background-position: -52px -220px;
+  background-position: -267px -30px;
   width: 20px;
   height: 30px;
 }
+.icon-icon_arrow-right-red {
+  background-image: url(../images/spritesheet.png);
+  background-position: -256px -153px;
+  width: 11px;
+  height: 16px;
+}
 .icon-icon_arrow-right {
   background-image: url(../images/spritesheet.png);
-  background-position: -32px -220px;
+  background-position: -267px 0px;
   width: 20px;
   height: 30px;
 }
@@ -66,15 +90,21 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-icon_consult {
   background-image: url(../images/spritesheet.png);
-  background-position: -177px -182px;
+  background-position: -180px -182px;
   width: 26px;
   height: 25px;
 }
 .icon-icon_discount {
   background-image: url(../images/spritesheet.png);
-  background-position: 0px -117px;
+  background-position: -164px 0px;
   width: 103px;
   height: 103px;
+}
+.icon-icon_edit {
+  background-image: url(../images/spritesheet.png);
+  background-position: -267px -146px;
+  width: 17px;
+  height: 16px;
 }
 .icon-icon_email {
   background-image: url(../images/spritesheet.png);
@@ -82,9 +112,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 31px;
   height: 22px;
 }
+.icon-icon_exit {
+  background-image: url(../images/spritesheet.png);
+  background-position: -239px -182px;
+  width: 21px;
+  height: 16px;
+}
 .icon-icon_fav {
   background-image: url(../images/spritesheet.png);
-  background-position: -203px -182px;
+  background-position: -206px -182px;
   width: 33px;
   height: 19px;
 }
@@ -94,17 +130,47 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 67px;
   height: 36px;
 }
+.icon-icon_heart {
+  background-image: url(../images/spritesheet.png);
+  background-position: -97px -220px;
+  width: 25px;
+  height: 22px;
+}
+.icon-icon_in-stock {
+  background-image: url(../images/spritesheet.png);
+  background-position: -103px -182px;
+  width: 43px;
+  height: 33px;
+}
 .icon-icon_mail {
   background-image: url(../images/spritesheet.png);
   background-position: -219px -153px;
   width: 37px;
   height: 18px;
 }
+.icon-icon_minus-rev {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -264px;
+  width: 22px;
+  height: 23px;
+}
 .icon-icon_platezh {
   background-image: url(../images/spritesheet.png);
-  background-position: -103px -182px;
+  background-position: -32px -220px;
   width: 40px;
   height: 34px;
+}
+.icon-icon_plus-rev {
+  background-image: url(../images/spritesheet.png);
+  background-position: -22px -264px;
+  width: 22px;
+  height: 23px;
+}
+.icon-icon_polzunok {
+  background-image: url(../images/spritesheet.png);
+  background-position: -267px -120px;
+  width: 20px;
+  height: 26px;
 }
 .icon-icon_post {
   background-image: url(../images/spritesheet.png);
@@ -112,39 +178,51 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 59px;
   height: 29px;
 }
+.icon-icon_price {
+  background-image: url(../images/spritesheet.png);
+  background-position: -72px -220px;
+  width: 25px;
+  height: 25px;
+}
 .icon-icon_sb {
   background-image: url(../images/spritesheet.png);
-  background-position: -143px -182px;
+  background-position: -146px -182px;
   width: 34px;
   height: 33px;
 }
 .icon-icon_search-btn {
   background-image: url(../images/spritesheet.png);
-  background-position: -126px -220px;
+  background-position: -267px -219px;
   width: 15px;
   height: 15px;
 }
+.icon-icon_select-arrow {
+  background-image: url(../images/spritesheet.png);
+  background-position: -278px -247px;
+  width: 9px;
+  height: 6px;
+}
 .icon-icon_sold {
   background-image: url(../images/spritesheet.png);
-  background-position: -164px 0px;
+  background-position: 0px -117px;
   width: 103px;
   height: 103px;
 }
 .icon-icon_to-cart-auction {
   background-image: url(../images/spritesheet.png);
-  background-position: -236px -182px;
+  background-position: -267px -162px;
   width: 14px;
   height: 19px;
 }
 .icon-icon_to-cart-black {
   background-image: url(../images/spritesheet.png);
-  background-position: -250px -182px;
+  background-position: -267px -181px;
   width: 14px;
   height: 19px;
 }
 .icon-icon_to-cart-pop {
   background-image: url(../images/spritesheet.png);
-  background-position: -112px -220px;
+  background-position: -267px -200px;
   width: 14px;
   height: 19px;
 }

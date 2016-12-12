@@ -1,0 +1,118 @@
+.product {
+  .container();
+  margin-bottom: 87px;
+
+  &__left {
+    width: 470px;
+    float: left;
+  }
+    &__pic--big {
+      .size(470px,470px);
+      margin-bottom: 19px;
+      .bg-color(@white);
+    }
+      &__pic--big img {
+        max-width: 470px;
+        max-height: 470px;
+      }
+
+    &__foto-item {
+      display: inline-block;
+      .size(103px,103px);
+      margin-right: 16px;
+      .bg-color(@white);
+      .align-center();
+      line-height: 103px;
+    }
+    &__foto-item:last-child {
+      margin-right: 0;
+    }
+      &__foto-item a {
+        display: block;
+      }
+      &__foto-item img {
+        max-width: 53px;
+        height: auto;
+        vertical-align: middle;
+      }
+
+  &__right {
+    max-width: 641px;
+    float: right;
+  }
+    &__h1 {
+      display: block;
+      width: 100%;
+      .relative();
+      margin-bottom: 33px;
+      padding-bottom: 51px;
+      border-bottom: 1px solid @color;
+      .font-family(@font-bold);
+      .font-size(4.6rem,3rem);
+      color: @color;
+      .uppercase();
+    }
+      &__brand {
+        .absolute();
+        left: 0;
+        bottom: 20px;
+        .font-family(@font-tahoma);
+        .font-size(1.5rem,15px);
+        color: #2c2c2c;
+        .no-decor();
+        text-transform: none;
+      }
+      &__brand:hover {
+        color: #2c2c2c;
+      }
+
+      &__rev-lnk {
+        .absolute();
+        right: 115px;
+        bottom: 20px;
+        .font-family(@font-tahoma);
+        .font-size(1.5rem,15px);
+        color: #2c2c2c;
+        .no-decor();
+        text-transform: none;
+      }
+      &__rev-lnk:hover {
+        color: #2c2c2c;
+      }
+
+      &__stars {
+        .size(97px,14px);
+        .bg-image("../images/stars.png");
+        .absolute();
+        right: 0;
+        bottom: 20px;
+      }
+        &__stars-inner {
+          width: 80%;
+          height: 14px;
+        }
+
+      &__anons {
+        display: inline-block;
+        margin-bottom: 27px;
+        padding-left: 9px;
+        .bg-color(@white);
+        .font-family(@font-tahoma);
+        .font-size(1.5rem,21px);
+        color: #2c2c2c;
+      }
+
+      &__more {
+        display: inline-block;
+        margin-bottom: 21px;
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem,15px);
+        color: @black-28;
+        font-weight: bold;
+        text-decoration: underline;
+        .transition();
+      }
+      &__more:hover {
+        color: @red-039;
+      }
+}

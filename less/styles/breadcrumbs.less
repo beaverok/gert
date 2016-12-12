@@ -1,0 +1,47 @@
+.breadcrumbs {
+    margin-bottom: 38px;
+
+    &__inner {
+      .container();
+      height: 22px;
+      .bg-color(@red);
+      padding-left: 13px;
+
+    }
+
+      &__list {
+        .ul-reset();
+      }
+        &__item {
+          display: inline-block;
+          vertical-align: top;
+        }
+          &__link {
+            font-family: @font-tahoma;
+            .font-size(1.2rem,22px);
+            color: @white;
+            .no-decor();
+            .transition();
+          }
+          &__link:hover {
+            color: @color;
+          }
+          &__link::after {
+            display: inline-block;
+            .size(6px,9px);
+            background-image: url(../images/spritesheet.png);
+            background-position: -281px -162px;
+            .relative();
+            top: -1px;
+            margin: 0 11px;
+            vertical-align: middle;
+            content: '';
+          }
+
+          &__current {
+            font-family: @font-tahoma;
+            .font-size(1.2rem,22px);
+            color: @white;
+            .no-decor();
+          }
+}

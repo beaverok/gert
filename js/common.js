@@ -16,4 +16,6 @@ $(document).ready(function () {
     if (is_safari) {
         $('body').addClass('safari');
     }
+
+    $('.auction-item__counter').timeTo(1000);
 });

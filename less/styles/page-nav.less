@@ -1,0 +1,46 @@
+.page-nav {
+  margin: 40px 0 75px;
+
+  &__inner {
+    .container();
+    .align-center();
+  }
+    &__prev {
+      display: inline-block;
+      background-image: url(../images/spritesheet.png);
+      background-position: -267px -247px;
+      width: 11px;
+      height: 16px;
+      margin-right: 50px;
+    }
+    &__next {
+      display: inline-block;
+      background-image: url(../images/spritesheet.png);
+      background-position: -256px -153px;
+      width: 11px;
+      height: 16px;
+      margin-left: 34px;
+    }
+
+    &__ul {
+      display: inline-block;
+      vertical-align: top;
+    }
+      &__li {
+        display: inline-block;
+        margin-right: 26px;
+        vertical-align: top;
+      }
+        &__li a {
+          .font-family(@font-trebuchet);
+          .font-size(1.5rem,16px);
+          color: @color;
+          font-weight: bold;
+          .uppercase();
+          .no-decor();
+          .transition();
+        }
+        &__li a:hover, &__li a.active {
+          color: @red-039;
+        }
+}

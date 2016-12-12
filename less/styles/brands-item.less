@@ -1,0 +1,48 @@
+.brands-item {
+  display: inline-block;
+  .size(368px,189px);
+  .relative();
+  margin: 0 29px 32px 0;
+  padding: 28px 25px 26px;
+  .bg-color(@white);
+  vertical-align: top;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+    &__name {
+      display: inline-block;
+      .font-family(@font-bold);
+      .font-size(1.8rem,16px);
+      color: @color;
+      .uppercase();
+      .no-decor();
+      .transition();
+    }
+    &__name:hover {
+      color: @red-039;
+    }
+
+    &__descr {
+      .size(165px,76px);
+      .absolute();
+      left: 25px;
+      bottom: 11px;
+      overflow: hidden;
+      .font-family(@font-tahoma);
+      .font-size(1.5rem,2.1rem);
+      color: #2c2c2c;
+    }
+
+    &__pic {
+      .size(122px,126px);
+      .absolute();
+      top: 32px;
+      right: 22px;
+    }
+      &__pic img {
+        max-width: 122px;
+        height: auto;
+      }
+}
