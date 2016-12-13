@@ -1,0 +1,73 @@
+.cart-page
+    .cart-page__inner
+        table.cart-page__table(border="0", cellpadding="0", cellspacing="0")
+            thead
+                tr
+                    th Фото
+                    th название
+                    th цена
+                    th количество
+                    th сумма
+                    th удалить
+            tbody
+                tr
+                    td
+                        .cart-page__pic
+                            img(src="images/tovar-small.jpg",alt="")
+                    td
+                        a.cart-page__name Stanabol-50
+                    td
+                        span.cart-page__price 1100 р.
+                    td
+                        .cart-page__quan
+                            span.cart-page__minus -
+                            input.cart-page__quan-input(type="num",value="1",min="1")
+                            span.cart-page__plus +
+                    td
+                        span.cart-page__price 1100 р.
+                    td
+                        span.cart-page__remove
+
+                tr
+                    td
+                        a.cart-page__pic
+                            img(src="images/tovar-small.jpg",alt="")
+                    td
+                        a.cart-page__name Stanabol-50
+                    td
+                        span.cart-page__price 1100 р.
+                    td
+                        .cart-page__quan
+                            span.cart-page__minus -
+                            input.cart-page__quan-input(type="num",value="1",min="1")
+                            span.cart-page__plus +
+                    td
+                        span.cart-page__price 1100 р.
+                    td
+                        span.cart-page__remove
+
+        .cart-page__total
+            .cart-page__coupon
+                input(type="text", placeholder="Купон на скидку")
+
+            .cart-page__sum
+                span.cart-page__sum-label общая стоимость:
+                span.cart-page__sum-price 38000 р.
+
+        .cart-page__present-list
+            .cart-page__present-item.cart-page__present-item--active
+                .cart-page__present-pic
+                    img(src="images/tovar-small.jpg",alt="")
+                .cart-page__present-name Возможное название подарка
+
+            .cart-page__present-item
+                .cart-page__present-pic
+                    img(src="images/tovar-small.jpg",alt="")
+                .cart-page__present-name Возможное название подарка
+
+            .cart-page__present-item
+                .cart-page__present-pic
+                    img(src="images/tovar-small.jpg",alt="")
+                .cart-page__present-name 400 руб.
+
+        include order-block

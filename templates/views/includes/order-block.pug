@@ -1,0 +1,46 @@
+.order-block
+    .order-block__left
+        .order-block__wrap
+            label.order-block__label Ф.И.О<span class="required">*</span>
+            input.order-block__input(type="text", placeholder="Иванов Ива Иваныч")
+        .order-block__wrap
+            label.order-block__label Моб.телефон
+            input.order-block__input(type="text", placeholder="+74951110033")
+        .order-block__wrap
+            label.order-block__label Email<span class="required">*</span>
+            input.order-block__input(type="text", placeholder="test@test.ru")
+        .order-block__wrap
+            label.order-block__label Город<span class="required">*</span>
+            input.order-block__input(type="text", placeholder="")
+        .order-block__wrap
+            label.order-block__label Индекс<span class="required">*</span>
+            input.order-block__input(type="text", placeholder="")
+        .order-block__wrap
+            label.order-block__label Адрес
+            input.order-block__input(type="text", placeholder="")
+        .order-block__wrap
+            label.order-block__label Комментарий
+            textarea.order-block__textarea
+
+    .order-block__right
+        .order-block__choose
+            .order-block__h3 Способ доставки
+            .order-block__descr Введите город, почтовый индекс и адрес доставки. Суммарный вес заказа: 0.5 кг
+            .order-block__choose-ul
+                .order-block__choose-li
+                    label
+                        input(type="radio")
+                        span Почта России
+
+        .order-block__choose
+            .order-block__h3 Способ оплаты
+            .order-block__descr Введите город, почтовый индекс и адрес доставки. Суммарный вес заказа: 0.5 кг
+            .order-block__choose-ul
+                .order-block__choose-li
+                    label
+                        input(type="radio")
+                        span Почта России
+
+    .order-block__submit
+        input.order-block__submit-btn(type="submit",value="Оформить заказ!")
+        .order-block__submit-note В ближайшее время наш менеджер свяжется с вами!
