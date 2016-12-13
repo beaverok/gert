@@ -1,0 +1,138 @@
+.order-block {
+  margin-bottom: 83px;
+  padding-top: 28px;
+  border-top: 1px solid @color;
+
+  &::after {
+    display: block;
+    width: 100%;
+    clear: both;
+    content: '';
+  }
+
+  &__left {
+    width: 330px;
+    float: left;
+  }
+    &__wrap {
+      width: 330px;
+      margin-bottom: 7px;
+    }
+      &__label {
+        display: inline-block;
+        margin-bottom: 8px;
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem,normal);
+        color: @black-28;
+        font-weight: bold;
+      }
+        &__label .required {
+          color: @red-039;
+        }
+      &__input {
+        .size(100%,45px);
+        padding: 0 20px;
+        border: none;
+        .bg-color(@white);
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem,normal);
+        color: @black-28;
+        font-weight: bold;
+      }
+      &__textarea {
+        .size(100%,155px);
+        padding: 5px 20px;
+        border: none;
+        .bg-color(@white);
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem,normal);
+        color: @black-28;
+        font-weight: bold;
+        resize: none;
+      }
+
+  &__right {
+    width: 400px;
+    padding-top: 20px;
+    float: right;
+  }
+    &__choose {
+      margin-bottom: 37px;
+    }
+      &__h3 {
+        margin-bottom: 13px;
+        .font-family(@font-bold);
+        .font-size(2.3rem,normal);
+        color: @color;
+        .uppercase();
+      }
+      &__descr {
+        margin-bottom: 19px;
+        .font-family(@font-tahoma);
+        .font-size(1.5rem,22px);
+        color: @black-2c;
+      }
+      &__choose-li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      &__choose-li label span {
+        display: block;
+        .relative();
+        padding-left: 42px;
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem,30px);
+        color: @black-28;
+        font-weight: bold;
+      }
+      &__choose-li label span::before {
+        display: block;
+        .size(30px,30px);
+        .absolute();
+        .pos();
+        .bg-image("../images/spritesheet.png");
+        background-position: -198px -221px;
+        content: '';
+      }
+      &__choose-li input {
+        .absolute();
+        visibility: hidden;
+      }
+      &__choose-li input:checked + span::before {
+        background-position: -166px -221px;
+      }
+
+  &__submit {
+    width: 100%;
+    border-top: 1px solid @color;
+    .relative();
+    top: 45px;
+    margin-bottom: 121px;
+    padding-top: 44px;
+    clear: both;
+  }
+    &__submit-btn {
+      display: block;
+      .size(235px,59px);
+      margin: 0 auto 24px;
+      border: 3px solid @red-039;
+      .bg-color(transparent);
+      .font-family(@font-bold);
+      .font-size(1.9rem,54px);
+      color: @color;
+      .align-center();
+      cursor: pointer;
+      .transition();
+    }
+    &__submit-btn:hover {
+      .bg-color(@red-039);
+      color: @white;
+    }
+    &__submit-note {
+      .font-family(@font-tahoma);
+      .font-size(1.5rem,15px);
+      color: @black-2c;
+      .align-center();
+    }
+}

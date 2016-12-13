@@ -1,0 +1,113 @@
+.price-item {
+  padding: 16px 0;
+  .bg-image("../images/bg_curve.png");
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+
+  &__pic {
+    display: inline-block;
+    .size(103px,103px);
+    .bg-color(@white);
+    margin-right: 25px;
+    .align-center();
+    line-height: 103px;
+  }
+    &__pic img {
+      max-width: 103px;
+      max-height: 103px;
+      vertical-align: middle;
+    }
+
+  &__name {
+    display: inline-block;
+    width: 470px;
+    margin-right: 82px;
+    .font-family(@font-trebuchet);
+    .font-size(1.5rem,normal);
+    color: @black-28;
+    font-weight: bold;
+    text-decoration: underline;
+    vertical-align: middle;
+    .transition();
+  }
+  &__name:hover {
+    color: @red-039;
+  }
+
+  &__sum {
+    display: inline-block;
+    width: 188px;
+    margin-right: 10px;
+    .font-family(@font-trebuchet);
+    .font-size(2.3rem,23px);
+    color: @red-039;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  &__sum--empty {
+    color: #818181;
+  }
+
+  &__quan {
+    display: inline-block;
+    .size(94px,30px);
+    margin-right: 49px;
+    .bg-color(@white);
+    .font-family(@font-trebuchet);
+    .font-size(1.5rem,normal);
+    color: @black-28;
+    font-weight: bold;
+  }
+    &__minus, &__plus {
+      display: inline-block;
+      .size(30px,30px);
+      margin-right: -4px;
+      line-height: 30px;
+      .align-center();
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    &__quan-input {
+      display: inline-block;
+      .size(34px,30px);
+      border: none;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      .align-center();
+    }
+
+  &__to-cart {
+    display: inline-block;
+    .size(140px,44px);
+    .relative();
+    padding-left: 50px;
+    border: 3px solid @red-039;
+    .font-family(@font-bold);
+    .font-size(1.4rem,3.6rem);
+    color: @color;
+    text-decoration: underline;
+    .uppercase();
+    .transition();
+  }
+  &__to-cart::before {
+    .absolute();
+    .pos(6px,20px);
+    background-image: url(../images/spritesheet.png);
+    background-position: -126px -220px;
+    width: 17px;
+    height: 23px;
+    content: '';
+  }
+  &__to-cart:hover {
+    .bg-color(@red-039);
+  }
+
+  &__empty {
+    .font-family(@font-trebuchet);
+    .font-size(2.3rem,103px);
+    color: #818181;
+    font-weight: bold;
+    text-align: right;
+    float: right;
+  }
+}

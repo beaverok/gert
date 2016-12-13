@@ -1,0 +1,20 @@
+.price-page
+    h1.price-page__title прайс лист
+    a.price-page__logout выйти
+
+    include price-filter
+
+    a.price-page__download Скачать прайс лист 08-10-2016
+
+    .price-page__sections
+        a.price-page__section
+            span сувениры
+        a.price-page__section
+            span метандиенон
+        a.price-page__section
+            span тестостерон
+
+    .price-page__list
+        include price-item
+
+    include page-nav
