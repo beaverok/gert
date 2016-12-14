@@ -1,0 +1,101 @@
+.price-page {
+  .relative();
+  .container();
+  margin-bottom: 107px;
+
+  &__title {
+    margin-bottom: 38px;
+    .font-family(@font-bold);
+    .font-size(4.6rem,46px);
+    color: @color;
+    .uppercase();
+  }
+
+  &__logout {
+    display: block;
+    .size(175px,49px);
+    .absolute();
+    top: 0;
+    right: 0;
+    border: 3px solid @color;
+    .font-family(@font-bold);
+    .font-size(1.9rem,44px);
+    color: @color;
+    .uppercase();
+    .align-center();
+    .no-decor();
+  }
+  &__logout::before {
+    display: block;
+    background-image: url(../images/spritesheet.png);
+    background-position: -239px -182px;
+    width: 21px;
+    height: 16px;
+    .absolute();
+    .pos(15px,27px);
+    content: '';
+  }
+
+  &__download {
+    display: inline-block;
+    .relative();
+    margin-left: 31px;
+    margin-bottom: 24px;
+    padding-left: 37px;
+    .font-family(@font-trebuchet);
+    .font-size(1.5rem,25px);
+    color: @black-28;
+    font-weight: bold;
+    text-decoration: underline;
+    .transition();
+  }
+  &__download:hover {
+    color: @red-039;
+  }
+    &__download::before {
+      display: block;
+      background-image: url(../images/spritesheet.png);
+      background-position: -72px -220px;
+      width: 25px;
+      height: 25px;
+      .absolute();
+      .pos();
+      content: '';
+    }
+
+  &__sections {
+    margin-bottom: 39px;
+  }
+    &__section {
+      display: inline-block;
+      height: 43px;
+      margin-right: 8px;
+      padding: 0 24px;
+      border: 3px solid @red-039;
+      .align-center();
+      .no-decor();
+      .transition();
+    }
+    &__section:hover {
+      .bg-color(@red-039);
+    }
+      &__section span {
+        .font-family(@font-bold);
+        .font-size(1.4rem,37px);
+        color: @color;
+        text-decoration: underline;
+      }
+      &__section:hover span {
+        color: @white;
+      }
+
+  &__list {
+    margin-bottom: 73px;
+    .bg-image("../images/bg_curve.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+}
+
+@import "price-filter";
+@import "price-item";
