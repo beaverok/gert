@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner"><a class="header__logo"><img src="images/logo.png" alt=""></a>
+        <div class="header__url">Gerthshop.pro</div>
+        <div class="header__slogan"><span>ТВОЙ ПРО ПОСТАВЩИК</span> <br><span>спортивной фармакологии</span></div>
+        <div class="header__top-right">
+          <div class="header__fav"><a><span>3</span></a></div>
+          <div class="header__last-mess"><a>YF123456789RU</a></div>
+          <div class="header__auth"><a class="header__auth-link">Личный кабинет</a></div>
+        </div>
+        <div class="top-menu">
+          <ul class="top-menu__list">
+            <li class="top-menu__item"><a class="top-menu__link" href="#">О нас</a></li>
+            <li class="top-menu__item"><a class="top-menu__link" href="#">Сотрудничество</a></li>
+            <li class="top-menu__item"><a class="top-menu__link" href="#">FAQ и правила заказа</a></li>
+            <li class="top-menu__item"><a class="top-menu__link" href="#">Сертификаты</a></li>
+            <li class="top-menu__item"><a class="top-menu__link" href="#">Общение</a></li>
+          </ul>
+        </div>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">КАТАЛОГ</a>
+              <ul class="main-menu__submenu">
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link">Тест</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link">Тест</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link">Тест</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link">Тест</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link">Тест</a></li>
+              </ul>
+            </li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">ПРОИЗВОДИТЕЛИ</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">СКИДКИ</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">ДОСТАВКА И ОПЛАТА</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">НОВИЧКАМ</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">ОТЗЫВЫ</a></li>
+          </ul>
+        </nav>
+        <div class="header-search">
+          <input class="header-search__input" placeholder="Поиск" type="text">
+          <input class="header-search__submit" value="" type="submit">
+        </div>
+        <div class="header-cart">
+          <div class="header-cart__title">Корзина</div>
+          <div class="header-cart__present">В корзине лежит подарок!</div>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a><span class="breadcrumbs__current">заголовок страницы</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="personal-page">
+      <h1 class="personal-page__title">профиль</h1><a class="personal-page__logout">выйти</a>
+      <div class="personal-sidebar">
+        <div class="personal-sidebar__inner">
+          <div class="personal-sidebar__bg"></div><a class="personal-sidebar__foto-change"></a>
+          <div class="personal-sidebar__foto" style="background-image: url(images/personal-foto.jpg)"></div>
+          <div class="personal-sidebar__balance-block">
+            <label>Ваш баланс</label><span>38000 р.</span><a class="personal-sidebar__add">Пополнить баланс</a><a class="personal-sidebar__history">История операций</a>
+          </div>
+          <div class="personal-sidebar__discount-block">
+            <div class="personal-sidebar__discount-current">
+              <label>Ваша скидка</label><span>5%</span>
+            </div>
+            <div class="personal-sidebar__purchase-sum">Общая <br>сумма покупок: 16 300 р.</div>
+            <div class="personal-sidebar__chart">
+              <div class="personal-sidebar__chart-inner"><span></span></div>
+              <div class="personal-sidebar__sum-from">10 000 р.</div>
+              <div class="personal-sidebar__sum-to">20 000 р.</div>
+            </div>
+            <div class="personal-sidebar__percent">
+              <label>3%</label><span>Свыше 0 р.</span>
+            </div>
+            <div class="personal-sidebar__percent">
+              <label>5%</label><span>Свыше 10 000 р.</span>
+            </div>
+            <div class="personal-sidebar__percent">
+              <label>7%</label><span>Свыше 20 000 р.</span>
+            </div>
+            <div class="personal-sidebar__percent">
+              <label>10%</label><span>Свыше 30 000 р.</span>
+            </div>
+          </div>
+          <div class="personal-sidebar__invite">
+            <div class="personal-sidebar__invite-title">Приведи друга!</div>
+            <div class="personal-sidebar__invite-descr">Здай нам имейл своего другана и коси проценты с каждой покупки друга!</div>
+            <div class="personal-sidebar__invite-input-wrap">
+              <input class="personal-sidebar__invite-input" type="text" placeholder="Введи имейл">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="personal-tabs">
+        <ul class="personal-tabs__ul">
+          <div class="personal-tabs__li"><a class="personal-tabs__lnk">История заказов</a></div>
+          <div class="personal-tabs__li"><a class="personal-tabs__lnk">Мои данные</a></div>
+          <div class="personal-tabs__li"><a class="personal-tabs__lnk">Мне понравилось</a></div>
+          <div class="personal-tabs__li"><a class="personal-tabs__lnk">адресная книга</a></div>
+          <div class="personal-tabs__li"><a class="personal-tabs__lnk">Партнерская программа</a></div>
+          <div class="personal-tabs__li"><span class="personal-tabs__quan">3</span><a class="personal-tabs__lnk">Информация</a></div>
+          <div class="personal-tabs__li"><a class="personal-tabs__lnk">консультант</a></div>
+        </ul>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__left">
+          <div class="footer-menu">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link">КАТАЛОГ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link">ПРОИЗВОДИТЕЛИ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link">СКИДКИ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link">Новичкам</a></li>
+            </ul>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link">КАТАЛОГ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link">ПРОИЗВОДИТЕЛИ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link">СКИДКИ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link">Новичкам</a></li>
+            </ul>
+          </div>
+          <div class="page-footer__price-link"><a>Единый прайс-лист продукции<br> в удобным поиском!</a></div>
+        </div>
+        <div class="page-footer__right">
+          <div class="page-footer__mail-note">Для связи напишите консультанту в вашем Личном кабинете</div>
+          <div class="page-footer__pay">
+            <div class="page-footer__pay-title">Принимаем к оплате</div>
+            <div class="page-footer__pay-sb"></div>
+            <div class="page-footer__pay-btc"></div>
+            <div class="page-footer__pay-etc"></div>
+          </div>
+          <div class="page-footer__deliver">
+            <div class="page-footer__deliver-title">Способы доставки</div>
+            <div class="page-footer__deliver-icon"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="page-footer__copyright">Copyright 2016. Gerthshop.pro - Гастроном спортивной<br> фармакологии №1 в России</div>
+      </div>
+    </footer>
+    <div class="button-up"><a></a></div>
+    <div class="side-buttons">
+      <div class="side-buttons__button side-buttons__cart"><a class="side-buttons__button-inner"><span class="side-buttons__label">Корзина</span><span class="side-buttons__cart-inner"><span class="side-buttons__cart-num">3</span></span></a></div>
+      <div class="side-buttons__button side-buttons__consult"><a class="side-buttons__button-inner"><span class="side-buttons__label">Консультант</span></a></div>
+    </div>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

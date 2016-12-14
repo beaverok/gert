@@ -3707,16 +3707,12 @@ body {
   line-height: 22px;
   color: #2c2c2c;
 }
-<<<<<<< HEAD
-.order-block__choose-li label {
-=======
 .order-block__choose-li {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 .order-block__choose-li label span {
->>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
   display: block;
   position: relative;
   padding-left: 42px;
@@ -3726,11 +3722,7 @@ body {
   color: #282828;
   font-weight: bold;
 }
-<<<<<<< HEAD
-.order-block__choose-li label::before {
-=======
 .order-block__choose-li label span::before {
->>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
   display: block;
   width: 30px;
   height: 30px;
@@ -3745,12 +3737,9 @@ body {
   position: absolute;
   visibility: hidden;
 }
-<<<<<<< HEAD
-=======
 .order-block__choose-li input:checked + span::before {
   background-position: -166px -221px;
 }
->>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
 .order-block__submit {
   width: 100%;
   border-top: 1px solid #000;
@@ -3951,19 +3940,12 @@ body {
   color: #fff;
   font-weight: bold;
 }
-<<<<<<< HEAD
-.price-filter__select {
-  width: 299px;
-  height: 45px;
-  background-color: #fff;
-=======
 .price-filter__select,
 .price-filter__select-wrap .sbHolder {
   width: 299px;
   height: 45px;
   background-color: #fff;
   position: relative;
->>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
   padding-left: 20px;
   font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
@@ -3971,8 +3953,6 @@ body {
   color: #282828;
   font-weight: bold;
 }
-<<<<<<< HEAD
-=======
 .price-filter__select-wrap .sbToggle {
   display: block;
   width: 53px;
@@ -4031,7 +4011,6 @@ body {
 .price-filter__select-wrap .sbOptions li a:hover {
   color: #f20303;
 }
->>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
 .price-item {
   padding: 16px 0;
   background-image: url("../images/bg_curve.png");
@@ -4160,4 +4139,286 @@ body {
   font-weight: bold;
   text-align: right;
   float: right;
+}
+.personal-page {
+  width: 1170px;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .personal-page {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .personal-page {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .personal-page {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.personal-page__title {
+  margin-bottom: 41px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 4.6rem;
+  line-height: 33px;
+  color: #000;
+  text-transform: uppercase;
+}
+.personal-page__logout {
+  display: block;
+  width: 175px;
+  height: 49px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 3px solid #000;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.9rem;
+  line-height: 44px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+.personal-page__logout::before {
+  display: block;
+  background-image: url(../images/spritesheet.png);
+  background-position: -239px -182px;
+  width: 21px;
+  height: 16px;
+  position: absolute;
+  top: 15px;
+  left: 27px;
+  content: '';
+}
+.personal-sidebar {
+  width: 270px;
+  background-image: url("../images/bg_personal-side2.jpg");
+}
+.personal-sidebar__inner {
+  width: 270px;
+  position: relative;
+  padding-bottom: 47px;
+}
+.personal-sidebar__bg {
+  width: 488px;
+  height: 298px;
+  position: absolute;
+  top: -50px;
+  left: -110px;
+  background-image: url("../images/bg_personal-side1.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.personal-sidebar__foto-change {
+  display: block;
+  width: 34px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 37px;
+  background-image: url("../images/spritesheet.png");
+  background-position: -230px -222px;
+}
+.personal-sidebar__foto {
+  width: 135px;
+  height: 135px;
+  background-color: #fff;
+  background-position: center center;
+  background-clip: content-box;
+  background-size: contain;
+  position: relative;
+  top: 43px;
+  margin: 0 auto 69px;
+  border-radius: 135px;
+  overflow: hidden;
+}
+.personal-sidebar__balance-block {
+  width: 204px;
+  background-image: url("../images/curve-yellow.png");
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
+  margin: 0 auto 14px;
+  padding-bottom: 28px;
+  text-align: center;
+}
+.personal-sidebar__balance-block label {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 17px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.personal-sidebar__balance-block span {
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  line-height: 25px;
+  color: #ff0039;
+  text-transform: uppercase;
+}
+.personal-sidebar__balance-block a {
+  display: inline-block;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: underline;
+  opacity: 0.5;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
+}
+.personal-sidebar__balance-block a:hover {
+  color: #ff0039;
+}
+.personal-sidebar__balance-block a:first-child {
+  margin-top: 25px;
+}
+.personal-sidebar__discount-block {
+  width: 218px;
+  background-image: url("../images/curve-yellow.png");
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
+  margin: 0 auto 24px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.personal-sidebar__discount-current {
+  margin-bottom: 20px;
+}
+.personal-sidebar__discount-current label {
+  display: inline-block;
+  margin-right: 7px;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+  color: #a8a8a9;
+}
+.personal-sidebar__discount-current span {
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  line-height: 25px;
+  color: #ff0039;
+  text-transform: uppercase;
+}
+.personal-sidebar__purchase-sum {
+  margin-bottom: 13px;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+  color: #a8a8a9;
+}
+.personal-sidebar__chart {
+  position: relative;
+  margin-bottom: 26px;
+}
+.personal-sidebar__chart::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.personal-sidebar__chart-inner {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.personal-sidebar__chart-inner span {
+  display: block;
+  width: 80%;
+  height: 12px;
+  background-color: #ff0039;
+}
+.personal-sidebar__sum-from {
+  float: left;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+  color: #fff;
+}
+.personal-sidebar__sum-to {
+  float: right;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+  color: #fff;
+  text-align: right;
+}
+.personal-sidebar__percent {
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 12px;
+  color: #fff;
+  opacity: 0.5;
+  text-align: left;
+}
+.personal-sidebar__percent label {
+  display: inline-block;
+  width: 122px;
+  margin-bottom: 11px;
+}
+.personal-sidebar__invite {
+  width: 217px;
+  margin: 0 auto;
+  text-align: center;
+}
+.personal-sidebar__invite-title {
+  margin-bottom: 7px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.personal-sidebar__invite-descr {
+  margin-bottom: 17px;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 18px;
+  color: #a8a8a9;
+}
+.personal-sidebar__invite-input-wrap {
+  position: relative;
+}
+.personal-sidebar__invite-input {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  padding: 0 52px 0 16px;
+  background-color: #fff;
+  border: none;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: normal;
+  color: #a8a8a9;
+}
+.personal-sidebar__invite-input-wrap::after {
+  display: block;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  background-image: url("../images/spritesheet.png");
+  background-position: -72px -269px;
+  content: '';
 }
