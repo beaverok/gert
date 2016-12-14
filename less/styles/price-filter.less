@@ -24,13 +24,64 @@
       color: @white;
       font-weight: bold;
     }
-      &__select {
+      &__select, &__select-wrap .sbHolder {
         .size(299px,45px);
         .bg-color(@white);
+        .relative();
         padding-left: 20px;
         .font-family(@font-trebuchet);
         .font-size(1.5rem,45px);
         color: @black-28;
         font-weight: bold;
       }
+      &__select-wrap .sbToggle {
+        display: block;
+        .size(53px,45px);
+        .absolute();
+        top: 0;
+        right: 0;
+      }
+      &__select-wrap .sbToggle::before {
+        display: block;
+        background-image: url(../images/spritesheet.png);
+        background-position: -278px -247px;
+        width: 9px;
+        height: 6px;
+        .absolute();
+        top: 19px;
+        right: 22px;
+        content: '';
+      }
+      &__select-wrap .sbSelector {
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem,45px);
+        color: @black-28;
+        font-weight: bold;
+        .no-decor();
+      }
+      &__select-wrap .sbOptions {
+        width: 301px;
+        .absolute();
+        top: 45px !important;
+        left: -1px;
+        padding: 10px 0 12px;
+        .bg-color(@white);
+        border: 1px solid @color;
+      }
+        &__select-wrap .sbOptions li {
+          display: block;
+          padding-left: 20px;
+          line-height: 24px;
+        }
+        &__select-wrap .sbOptions li a {
+          .font-family(@font-trebuchet);
+          .font-size(1.5rem,normal);
+          color: @black-28;
+          font-weight: bold;
+          .no-decor();
+          .transition();
+        }
+        &__select-wrap .sbOptions li a:hover {
+          color: @red;
+        }
 }

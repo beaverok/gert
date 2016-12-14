@@ -72,7 +72,12 @@
         .font-size(1.5rem,22px);
         color: @black-2c;
       }
-      &__choose-li label {
+      &__choose-li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      &__choose-li label span {
         display: block;
         .relative();
         padding-left: 42px;
@@ -81,7 +86,7 @@
         color: @black-28;
         font-weight: bold;
       }
-      &__choose-li label::before {
+      &__choose-li label span::before {
         display: block;
         .size(30px,30px);
         .absolute();
@@ -93,6 +98,9 @@
       &__choose-li input {
         .absolute();
         visibility: hidden;
+      }
+      &__choose-li input:checked + span::before {
+        background-position: -166px -221px;
       }
 
   &__submit {

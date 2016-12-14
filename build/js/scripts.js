@@ -6736,6 +6736,8 @@ $(document).ready(function () {
     }
 
     $('.auction-item__counter').timeTo(1000);
+
+    $('.price-filter__select').selectbox();
 });
 
 $('.top-slider__play-btn').fancybox({

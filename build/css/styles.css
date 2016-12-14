@@ -3707,7 +3707,16 @@ body {
   line-height: 22px;
   color: #2c2c2c;
 }
+<<<<<<< HEAD
 .order-block__choose-li label {
+=======
+.order-block__choose-li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.order-block__choose-li label span {
+>>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
   display: block;
   position: relative;
   padding-left: 42px;
@@ -3717,7 +3726,11 @@ body {
   color: #282828;
   font-weight: bold;
 }
+<<<<<<< HEAD
 .order-block__choose-li label::before {
+=======
+.order-block__choose-li label span::before {
+>>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
   display: block;
   width: 30px;
   height: 30px;
@@ -3732,6 +3745,12 @@ body {
   position: absolute;
   visibility: hidden;
 }
+<<<<<<< HEAD
+=======
+.order-block__choose-li input:checked + span::before {
+  background-position: -166px -221px;
+}
+>>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
 .order-block__submit {
   width: 100%;
   border-top: 1px solid #000;
@@ -3932,10 +3951,19 @@ body {
   color: #fff;
   font-weight: bold;
 }
+<<<<<<< HEAD
 .price-filter__select {
   width: 299px;
   height: 45px;
   background-color: #fff;
+=======
+.price-filter__select,
+.price-filter__select-wrap .sbHolder {
+  width: 299px;
+  height: 45px;
+  background-color: #fff;
+  position: relative;
+>>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
   padding-left: 20px;
   font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
@@ -3943,6 +3971,67 @@ body {
   color: #282828;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+.price-filter__select-wrap .sbToggle {
+  display: block;
+  width: 53px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.price-filter__select-wrap .sbToggle::before {
+  display: block;
+  background-image: url(../images/spritesheet.png);
+  background-position: -278px -247px;
+  width: 9px;
+  height: 6px;
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  content: '';
+}
+.price-filter__select-wrap .sbSelector {
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 45px;
+  color: #282828;
+  font-weight: bold;
+  text-decoration: none;
+}
+.price-filter__select-wrap .sbOptions {
+  width: 301px;
+  position: absolute;
+  top: 45px !important;
+  left: -1px;
+  padding: 10px 0 12px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.price-filter__select-wrap .sbOptions li {
+  display: block;
+  padding-left: 20px;
+  line-height: 24px;
+}
+.price-filter__select-wrap .sbOptions li a {
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: #282828;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
+}
+.price-filter__select-wrap .sbOptions li a:hover {
+  color: #f20303;
+}
+>>>>>>> 3a1fe60a73868487afaf58560b906fb088e06dd3
 .price-item {
   padding: 16px 0;
   background-image: url("../images/bg_curve.png");
