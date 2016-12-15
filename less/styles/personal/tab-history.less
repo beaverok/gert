@@ -1,0 +1,62 @@
+.tab-history {
+  &__table {
+    width: 100%;
+    margin-bottom: 57px;
+  }
+    &__table thead tr {
+      .bg-color(@color);
+    }
+      &__table th {
+        height: 31px;
+        .font-family(@font-reg);
+        .font-size(1.4rem,normal);
+        color: @white;
+        .uppercase();
+        .align-center();
+        vertical-align: middle;
+      }
+}
+
+.order-line {
+  & td {
+    padding: 22px 0;
+    .bg-image("../images/bg_curve.png");
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+    .font-family(@font-reg);
+    .font-size(1.4rem,normal);
+    color: @color;
+    .uppercase();
+    .align-center();
+    vertical-align: middle;
+  }
+    &__num {
+      .font-family(@font-reg);
+      .font-size(1.4rem,normal);
+      color: @color;
+      .no-decor();
+      .transition();
+    }
+    &__num:hover {
+      color: @red-039;
+    }
+    &__price {
+      .font-family(@font-trebuchet);
+      .font-size(1.7rem,normal);
+      color: @red-039;
+      font-weight: bold;
+    }
+    &__status {
+      .relative();
+      padding-left: 29px;
+    }
+    &__status::before {
+      display: block;
+      .size(17px,17px);
+      .absolute();
+      .pos(-2px,0);
+      .bg-image("../images/spritesheet.png");
+      background-position: -72px -247px;
+      content: '';
+    }
+}

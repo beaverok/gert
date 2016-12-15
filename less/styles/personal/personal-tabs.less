@@ -1,0 +1,72 @@
+.personal-tabs {
+  max-width: 853px;
+  width: 100%;
+  float: right;
+
+  &__ul {
+    .ul-reset();
+    margin-bottom: 52px;
+  }
+    &__li {
+      display: inline-block;
+      height: 43px;
+      .relative();
+      margin-right: 2px;
+      vertical-align: middle;
+    }
+      &__li a {
+        display: inline-block;
+        height: 43px;
+        .relative();
+        padding: 0 17px;
+        border: 3px solid @red-039;
+        .font-family(@font-bold);
+        .font-size(1.4rem,34px);
+        color: @color;
+        .uppercase();
+        text-decoration: underline;
+        .align-center();
+        vertical-align: middle;
+        .transition();
+      }
+      &__lnk:hover, &__lnk--active {
+        border-color: @color !important;
+      }
+      &__lnk:hover::after, &__lnk--active::after {
+        display: block;
+        .size(26px,17px);
+        .absolute();
+        top: 58px;
+        left: 50%;
+        margin-left: -13px;
+        .bg-image("../images/spritesheet.png");
+        background-position: -93px -248px;
+        content: '';
+      }
+
+      &__quan {
+        display: block;
+        .size(16px,16px);
+        .bg-color(@red);
+        .absolute();
+        top: -7px;
+        right: 23px;
+        z-index: 10;
+        border-radius: 16px;
+        .font-family(@font-trebuchet);
+        .font-size(1rem,16px);
+        color: @white;
+        .align-center();
+        font-weight: bold;
+      }
+}
+
+.personal-tab {
+
+  &--active {
+    display: block;
+  }
+}
+
+@import "tab-history";
+@import "order-line";

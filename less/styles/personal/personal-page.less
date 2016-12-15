@@ -1,8 +1,16 @@
 .personal-page {
   .container();
   .relative();
+  margin-bottom: 100px;
 
-  &__title {
+  &::after {
+    display: block;
+    width: 100%;
+    clear: both;
+    content: '';
+  }
+
+    &__title {
     margin-bottom: 41px;
     .font-family(@font-bold);
     .font-size(4.6rem,33px);
@@ -37,3 +45,4 @@
 }
 
 @import "personal-sidebar";
+@import "personal-tabs";

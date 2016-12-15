@@ -1,17 +1,20 @@
 .personal-tabs
-    ul.personal-tabs__ul
-        .personal-tabs__li
-            a.personal-tabs__lnk История заказов
-        .personal-tabs__li
-            a.personal-tabs__lnk Мои данные
-        .personal-tabs__li
-            a.personal-tabs__lnk Мне понравилось
-        .personal-tabs__li
-            a.personal-tabs__lnk адресная книга
-        .personal-tabs__li
-            a.personal-tabs__lnk Партнерская программа
-        .personal-tabs__li
-            span.personal-tabs__quan 3
-            a.personal-tabs__lnk Информация
-        .personal-tabs__li
-            a.personal-tabs__lnk консультант
+    .personal-tabs__top
+        ul.personal-tabs__ul
+            .personal-tabs__li
+                a(href="#tab-history").personal-tabs__lnk.personal-tabs__lnk--active История заказов
+            .personal-tabs__li
+                a.personal-tabs__lnk Мои данные
+            .personal-tabs__li
+                a.personal-tabs__lnk Мне понравилось
+            .personal-tabs__li
+                a.personal-tabs__lnk адресная книга
+            .personal-tabs__li
+                a.personal-tabs__lnk Партнерская программа
+            .personal-tabs__li
+                span.personal-tabs__quan 3
+                a.personal-tabs__lnk Информация
+            .personal-tabs__li
+                a.personal-tabs__lnk консультант
+
+    include personal/tab-history

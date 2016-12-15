@@ -6883,16 +6883,16 @@ $(document).ready(function () {
     });
 });
 
-$(".solutions-tabs__link").click(function() {
-    var parentBox = $(this).parents('.solutions-tabs');
+$(".personal-tabs__lnk").click(function() {
+    var parentBox = $(this).parents('.personal-tabs');
 
-    $(parentBox).find("a").removeClass("solutions-tabs__link--active");
-    $(this).addClass("solutions-tabs__link--active");
-    $(".solutions-tab").hide();
+    $(parentBox).find("a").removeClass("personal-tabs__lnk--active");
+    $(this).addClass("personal-tabs__lnk--active");
+    $(".personal-tab").hide();
 
     var activeTab = $(this).attr("href");
     $(activeTab).fadeIn();
-    $(activeTab).find("> ul:not(.solutions-tabs__link--active)").addClass('solutions-tabs__link--active');
+    $(activeTab).find("> ul:not(.personal-tabs__lnk--active)").addClass('personal-tabs__lnk--active');
     return false;
 });
 

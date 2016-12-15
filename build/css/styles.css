@@ -2595,6 +2595,7 @@ body {
   margin: 40px 0 75px;
 }
 .page-nav__inner {
+  max-width: 100%;
   width: 1170px;
   margin: 0 auto;
   clear: both;
@@ -4145,6 +4146,7 @@ body {
   margin: 0 auto;
   clear: both;
   position: relative;
+  margin-bottom: 100px;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .personal-page {
@@ -4166,6 +4168,12 @@ body {
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+.personal-page::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
 }
 .personal-page__title {
   margin-bottom: 41px;
@@ -4205,6 +4213,7 @@ body {
 .personal-sidebar {
   width: 270px;
   background-image: url("../images/bg_personal-side2.jpg");
+  float: left;
 }
 .personal-sidebar__inner {
   width: 270px;
@@ -4409,7 +4418,7 @@ body {
   font-family: Tahoma, Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   line-height: normal;
-  color: #a8a8a9;
+  color: #282828;
 }
 .personal-sidebar__invite-input-wrap::after {
   display: block;
@@ -4420,5 +4429,149 @@ body {
   right: 16px;
   background-image: url("../images/spritesheet.png");
   background-position: -72px -269px;
+  content: '';
+}
+.personal-tabs {
+  max-width: 853px;
+  width: 100%;
+  float: right;
+}
+.personal-tabs__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 52px;
+}
+.personal-tabs__li {
+  display: inline-block;
+  height: 43px;
+  position: relative;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.personal-tabs__li a {
+  display: inline-block;
+  height: 43px;
+  position: relative;
+  padding: 0 17px;
+  border: 3px solid #ff0039;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 34px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
+}
+.personal-tabs__lnk:hover,
+.personal-tabs__lnk--active {
+  border-color: #000 !important;
+}
+.personal-tabs__lnk:hover::after,
+.personal-tabs__lnk--active::after {
+  display: block;
+  width: 26px;
+  height: 17px;
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  margin-left: -13px;
+  background-image: url("../images/spritesheet.png");
+  background-position: -93px -248px;
+  content: '';
+}
+.personal-tabs__quan {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #f20303;
+  position: absolute;
+  top: -7px;
+  right: 23px;
+  z-index: 10;
+  border-radius: 16px;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.personal-tab--active {
+  display: block;
+}
+.tab-history__table {
+  width: 100%;
+  margin-bottom: 57px;
+}
+.tab-history__table thead tr {
+  background-color: #000;
+}
+.tab-history__table th {
+  height: 31px;
+  font-family: "bebasneue_regular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+.order-line td {
+  padding: 22px 0;
+  background-image: url("../images/bg_curve.png");
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
+  font-family: "bebasneue_regular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+.order-line__num {
+  font-family: "bebasneue_regular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
+}
+.order-line__num:hover {
+  color: #ff0039;
+}
+.order-line__price {
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+  line-height: normal;
+  color: #ff0039;
+  font-weight: bold;
+}
+.order-line__status {
+  position: relative;
+  padding-left: 29px;
+}
+.order-line__status::before {
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background-image: url("../images/spritesheet.png");
+  background-position: -72px -247px;
   content: '';
 }
