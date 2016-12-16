@@ -2,6 +2,10 @@
   .size(100%,193px);
   .bg-image("../images/bg_subscribe.jpg");
 
+  @media @screen-xs {
+    height: auto;
+  }
+
   &__inner {
     .container();
     height: 123px;
@@ -9,6 +13,15 @@
     .relative();
     top: 34px;
     padding: 0 30px 0 62px;
+
+    @media @screen-lg {
+      background-position: -150px 0;
+    }
+    @media @screen-xs {
+      height: 290px;
+      background: none;
+      top: 15px;
+    }
   }
     &__title {
       width: 210px;
@@ -18,6 +31,13 @@
       .font-size(4.9rem,4.4rem);
       color: @color;
       .uppercase();
+
+      @media @screen-xs {
+        width: auto;
+        top: 0;
+        .font-size(3.5rem,4rem);
+        .align-center();
+      }
     }
     &__pic {
       background-image: url(../images/spritesheet.png);
@@ -26,6 +46,13 @@
       height: 117px;
       .absolute();
       .pos(-56px,434px);
+
+      @media @screen-lg {
+        left: 336px;
+      }
+      @media @screen-xs {
+        display: none;
+      }
     }
     &__text {
       width: 225px;
@@ -34,12 +61,32 @@
       .font-family(@font-bold);
       .font-size(1.8rem,1.8rem);
       color: @color;
-      .uppercase()
+      .uppercase();
+
+      @media @screen-lg {
+        left: 232px;
+      }
+      @media @screen-md {
+        width: auto;
+        top: 85px;
+        left: 196px;
+        .bg-color(@yellow);
+      }
+      @media @screen-xs {
+        top: 45px;
+        left: 50%;
+        margin-left: -112px;
+        .align-center();
+      }
     }
       &__text span {
         display: inline-block;
         padding: 0 7px 0 10px;
         .bg-color(@yellow);
+
+        @media @screen-md {
+          .bg-color(transparent);
+        }
       }
       &__text span:nth-of-type(1) {
         width: 157px;
@@ -56,6 +103,16 @@
       .absolute();
       top: 32px;
       right: 222px;
+
+      @media @screen-md {
+        top: 20px;
+      }
+      @media @screen-xs {
+        width: 310px;
+        top: 115px;
+        right: auto;
+        left: 5px;
+      }
     }
     &__input {
       .size(330px,56px);
@@ -65,6 +122,10 @@
       .font-size(1.5rem,normal);
       color: @black-28;
       font-weight: bold;
+
+      @media @screen-xs {
+        width: 310px;
+      }
     }
     &__input-wrap::before {
       display: block;
@@ -90,6 +151,16 @@
       .align-center();
       cursor: pointer;
       .transition();
+
+      @media @screen-md {
+        top: 20px;
+      }
+      @media @screen-xs {
+        top: 190px;
+        right: auto;
+        left: 50%;
+        margin-left: -90px;
+      }
     }
     &__submit:hover {
       .bg-color(@yellow);

@@ -3,11 +3,6 @@
   bottom: 32px;
   right: 0;
 
-  @media @screen-md {
-    float: none;
-    margin: 0 auto;
-    clear: both;
-  }
   @media @screen-xs {
     display: none;
   }
@@ -30,6 +25,10 @@
       margin-left: 60px;
 
       @media @screen-lg {
+        margin-left: 45px;
+      }
+      @media @screen-md {
+        margin-left: 30px;
       }
       @media @screen-xs {
         display: block;
@@ -48,9 +47,6 @@
 
         @media @screen-lg {
           padding: 0 6px;
-        }
-        @media @screen-md {
-          line-height: 60px;
         }
         @media @screen-xs {
           font-size: 1.6rem;

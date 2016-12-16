@@ -4,6 +4,11 @@
   background-position: center 0;
   background-repeat: no-repeat;
 
+  @media @screen-xs {
+    height: auto;
+    background-repeat: repeat;
+  }
+
   &--inner-page {
     height: 158px;
     .bg-color(#212832);
@@ -16,16 +21,44 @@
       .relative;
       height: 367px;
       padding: 54px 0 0;
+
+      @media @screen-md {
+        padding-top: 30px;
+      }
+      @media @screen-xs {
+        height: auto;
+      }
     }
 
       &__left {
         width: 570px;
         .relative();
         float: left;
+
+        @media @screen-lg {
+          width: 500px;
+        }
+        @media @screen-md {
+          width: 405px;
+        }
+        @media @screen-xs {
+          width: 310px;
+        }
       }
       &__right {
         width: 500px;
         float: right;
+
+        @media @screen-lg {
+          width: 440px;
+        }
+        @media @screen-md {
+          width: 310px;
+        }
+        @media @screen-xs {
+          width: 310px;
+          margin-top: 20px;
+        }
       }
 
         &__price-link {
@@ -33,6 +66,13 @@
           .absolute();
           .pos(0,325px);
           .align-center();
+
+          @media @screen-md {
+            left: 225px;
+          }
+          @media @screen-xs {
+            left: 120px;
+          }
         }
           &__price-link a {
             display: block;
@@ -53,7 +93,7 @@
             content: '';
           }
           &__price-link a:hover {
-            .no-decor();
+            color: @white;
           }
 
         &__mail-note {
@@ -64,6 +104,15 @@
           .font-family(@font-trebuchet);
           .font-size(1.8rem,normal);
           color: @white;
+
+          @media @screen-md {
+            width: auto;
+            margin-bottom: 25px;
+          }
+          @media @screen-xs {
+            width: auto;
+            margin-bottom: 20px;
+          }
         }
         &__mail-note::before {
           display: block;
@@ -81,6 +130,14 @@
           display: inline-block;
           margin-right: 84px;
           vertical-align: top;
+
+          @media @screen-md {
+            margin-bottom: 15px;
+          }
+          @media @screen-xs {
+            display: block;
+            margin: 0 0 20px;
+          }
         }
           &__pay-title {
             margin-bottom: 15px;
@@ -119,6 +176,11 @@
           width: 115px;
           display: inline-block;
           vertical-align: top;
+
+          @media @screen-xs {
+            display: block;
+            margin: 0;
+          }
         }
           &__deliver-title {
             margin-bottom: 15px;
@@ -142,6 +204,14 @@
     color: @white;
     opacity: 0.45;
     .align-center();
+
+    @media @screen-md {
+      margin-top: 30px;
+    }
+    @media @screen-xs {
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 }
 

@@ -6,8 +6,26 @@
   text-align: left;
   vertical-align: top;
 
+  @media @screen-md {
+    width: 350px;
+    margin-right: 12px;
+    margin-bottom: 40px;
+  }
+  @media @screen-xs {
+    display: block;
+    width: 320px;
+    margin: 0 auto 30px;
+  }
+
   &:nth-of-type(3n) {
     margin-right: 0;
+
+    @media @screen-lg {
+      margin-right: 42px;
+    }
+    @media @screen-xs {
+      margin: 0 auto 30px;
+    }
   }
 
   &__foto {
@@ -17,17 +35,33 @@
     .rounded(99px);
     line-height: 99px;
     vertical-align: top;
+
+    @media @screen-xs {
+      .size(70px,70px);
+      line-height: 70px;
+    }
   }
     &__foto img {
       max-width: 99px;
       height: auto;
       vertical-align: middle;
+
+      @media @screen-xs{
+        max-width: 70px;
+      }
     }
 
   &__right {
     display: inline-block;
     max-width: 235px;
     vertical-align: top;
+
+    @media @screen-md {
+      max-width: 225px;
+    }
+    @media @screen-xs {
+      max-width: 200px;
+    }
   }
     &__name {
       margin-bottom: 13px;

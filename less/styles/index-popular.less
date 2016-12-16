@@ -1,10 +1,29 @@
 .index-popular {
   padding: 77px 0 42px;
 
+  @media @screen-xs {
+    padding-top: 40px;
+  }
+
   &__inner {
     width: 1212px;
     .relative();
     margin: 0 auto;
+
+    @media @screen-lg {
+      width: 1024px;
+      .align-center();
+    }
+    @media @screen-md {
+      width: 768px;
+      .align-center();
+    }
+    @media @screen-xs {
+      width: 320px;
+      height: 870px;
+      .align-center();
+      overflow: hidden;
+    }
   }
     &__h3 {
       margin-bottom: 32px;

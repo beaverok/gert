@@ -6842,6 +6842,8 @@ google.maps.event.addDomListener(window, 'load', g_map);*/
 $('.page-header').headtacular({ scrollPoint: 50 });
 $(".input--phone").mask("+7 (999) 999-99-99");
 $(document).ready(function () {
+    var w = $(window).width();
+
     $('.top-slider__slides').bxSlider({
         mode: 'fade',
         pager: false,
@@ -6849,38 +6851,107 @@ $(document).ready(function () {
         prevText: ''
     });
 
-    $('.index-auctions__list').bxSlider({
-        controls: true,
-        pager: false,
-        nextText: '',
-        prevText: '',
-        minSlides: 4,
-        maxSlides: 4,
-        slideWidth: 227,
-        slideMargin: 95
-    });
+    if (w > 1023) {
+        $('.index-auctions__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 4,
+            maxSlides: 4,
+            slideWidth: 227,
+            slideMargin: 95
+        });
 
-    $('.index-kurs__list').bxSlider({
-        controls: true,
-        pager: false,
-        nextText: '',
-        prevText: '',
-        minSlides: 3,
-        maxSlides: 3,
-        slideWidth: 315,
-        slideMargin: 125
-    });
+        $('.index-kurs__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 3,
+            maxSlides: 3,
+            slideWidth: 315,
+            slideMargin: 125
+        });
 
-    $('.index-brands__list').bxSlider({
-        controls: true,
-        pager: false,
-        nextText: '',
-        prevText: '',
-        minSlides: 5,
-        maxSlides: 5,
-        slideWidth: 134,
-        slideMargin: 130
-    });
+        $('.index-brands__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 5,
+            maxSlides: 5,
+            slideWidth: 134,
+            slideMargin: 130
+        });
+    }
+
+    if (w < 1024 && w > 640) {
+        $('.index-auctions__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 2,
+            maxSlides: 2,
+            slideWidth: 227,
+            slideMargin: 20
+        });
+
+        $('.index-kurs__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 2,
+            maxSlides: 2,
+            slideWidth: 315,
+            slideMargin: 20
+        });
+
+        $('.index-brands__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 3,
+            maxSlides: 3,
+            slideWidth: 134,
+            slideMargin: 60
+        });
+    }
+    if (w < 640) {
+        $('.index-auctions__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 1,
+            maxSlides: 1,
+            slideWidth: 227
+        });
+
+        $('.index-kurs__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 1,
+            maxSlides: 1,
+            slideWidth: 315
+        });
+
+        $('.index-brands__list').bxSlider({
+            controls: true,
+            pager: false,
+            nextText: '',
+            prevText: '',
+            minSlides: 2,
+            maxSlides: 2,
+            slideWidth: 134,
+            slideMargin: 30
+        });
+    }
 });
 
 $(".personal-tabs__lnk").click(function() {

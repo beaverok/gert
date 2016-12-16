@@ -17,6 +17,9 @@
     .bg-color(@red);
     padding: 0 10px 0 14px;
 
+    @media @screen-lg {
+      padding: 0 10px;
+    }
     @media @screen-md {
       max-width: 100%;
     }
@@ -31,6 +34,10 @@
     margin-right: 19px;
 
     @media @screen-lg {
+      margin-right: 4px;
+    }
+    @media @screen-lg {
+      margin-right: 4px;
     }
     @media @screen-xs {
       display: block;
@@ -53,16 +60,14 @@
         padding: 0 6px;
       }
       @media @screen-md {
-        line-height: 60px;
+        padding: 0;
       }
       @media @screen-xs {
-        font-size: 1.6rem;
-        line-height: 30px;
-        color: @white;
+
       }
     }
     &__link:hover, &__link--active {
-
+      color: @color;
 
       @media @screen-xs {
         background: none;

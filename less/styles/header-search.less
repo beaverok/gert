@@ -3,6 +3,11 @@
   top: 70px;
   right: 174px;
 
+  @media @screen-xs {
+    top: 142px;
+    right: 0;
+  }
+
   &__input {
     .size(336px,45px);
     .bg-color(@white);
@@ -11,6 +16,16 @@
     .font-family(@font-trebuchet);
     .font-size(1.5rem, 4.5rem);
     color: @black-28;
+
+    @media @screen-lg {
+      width: 265px;
+    }
+    @media @screen-md {
+      width: 200px;
+    }
+    @media @screen-xs {
+      width: 315px;
+    }
   }
 
   &__submit {
