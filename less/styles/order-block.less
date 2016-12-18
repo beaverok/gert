@@ -13,10 +13,21 @@
   &__left {
     width: 330px;
     float: left;
+
+    @media @screen-xs {
+      width: 310px;
+      float: none;
+      margin: 0 auto;
+    }
   }
     &__wrap {
       width: 330px;
       margin-bottom: 7px;
+
+      @media @screen-xs {
+        width: 310px;
+        margin: 0 auto 7px;
+      }
     }
       &__label {
         display: inline-block;
@@ -55,9 +66,19 @@
     width: 400px;
     padding-top: 20px;
     float: right;
+
+    @media @screen-xs {
+      width: 310px;
+      float: none;
+      margin: 0 auto;
+    }
   }
     &__choose {
       margin-bottom: 37px;
+
+      @media @screen-xs {
+        margin-bottom: 10px;
+      }
     }
       &__h3 {
         margin-bottom: 13px;
@@ -111,6 +132,11 @@
     margin-bottom: 121px;
     padding-top: 44px;
     clear: both;
+
+    @media @screen-xs {
+      top: 20px;
+      margin-bottom: 0;
+    }
   }
     &__submit-btn {
       display: block;

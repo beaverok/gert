@@ -3,6 +3,19 @@
   .relative();
   margin-bottom: 100px;
 
+  @media @screen-lg {
+    margin-bottom: 20px;
+  }
+  @media @screen-md {
+    margin-bottom: 20px;
+  }
+  @media (min-width: 320px) and (max-width: 479px) {
+    overflow: hidden;
+  }
+  @media @screen-xs {
+    margin-bottom: 20px;
+  }
+
   &::after {
     display: block;
     width: 100%;
@@ -31,6 +44,11 @@
     .uppercase();
     .align-center();
     .no-decor();
+
+    @media @screen-xs {
+      width: 110px;
+      padding-left: 22px;
+    }
   }
   &__logout::before {
     display: block;
@@ -41,6 +59,10 @@
     .absolute();
     .pos(15px,27px);
     content: '';
+
+    @media @screen-xs {
+      left: 10px;
+    }
   }
 }
 

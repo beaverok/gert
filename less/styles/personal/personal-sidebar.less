@@ -3,10 +3,22 @@
   .bg-image("../images/bg_personal-side2.jpg");
   float: left;
 
+  @media @screen-md {
+    width: 200px;
+  }
+  @media @screen-xs {
+    float: none;
+    margin: 0 auto 30px;
+  }
+
   &__inner {
     width: 270px;
     .relative();
     padding-bottom: 47px;
+
+    @media @screen-md {
+      width: 200px;
+    }
   }
     &__bg {
       .size(488px,298px);
@@ -17,6 +29,10 @@
       background-position: 0 0;
       background-repeat: no-repeat;
       z-index: -1;
+
+      @media @screen-md {
+        left: -135px;
+      }
     }
     &__foto-change {
       display: block;
@@ -49,6 +65,10 @@
       margin: 0 auto 14px;
       padding-bottom: 28px;
       .align-center();
+
+      @media @screen-md {
+        width: 190px;
+      }
     }
       &__balance-block label {
         display: inline-block;
@@ -89,6 +109,10 @@
         margin: 0 auto 24px;
         padding-bottom: 25px;
         .align-center();
+
+        @media @screen-md {
+          width: 190px;
+        }
       }
         &__discount-current {
           margin-bottom: 20px;
@@ -160,12 +184,20 @@
             display: inline-block;
             width: 122px;
             margin-bottom: 11px;
+
+            @media @screen-md {
+              width: 94px;
+            }
           }
 
       &__invite {
         width: 217px;
         margin: 0 auto;
         .align-center();
+
+        @media @screen-md {
+          width: 190px;
+        }
       }
         &__invite-title {
           margin-bottom: 7px;

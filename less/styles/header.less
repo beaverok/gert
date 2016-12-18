@@ -14,7 +14,6 @@ body {
   }
   @media @screen-xs {
     height: auto;
-    overflow: hidden;
   }
 
   &.is-stuck {
@@ -77,6 +76,10 @@ body {
     .container();
     .relative();
     height: 198px;
+
+    @media @screen-xs {
+      height: 245px;
+    }
   }
   &__inner::after {
     display: block;

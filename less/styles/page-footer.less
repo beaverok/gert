@@ -27,6 +27,7 @@
       }
       @media @screen-xs {
         height: auto;
+        padding-top: 30px;
       }
     }
 
@@ -71,7 +72,7 @@
             left: 225px;
           }
           @media @screen-xs {
-            left: 120px;
+            left: 130px;
           }
         }
           &__price-link a {
@@ -135,7 +136,8 @@
             margin-bottom: 15px;
           }
           @media @screen-xs {
-            display: block;
+            display: inline-block;
+            width: 190px;
             margin: 0 0 20px;
           }
         }
@@ -152,6 +154,10 @@
             width: 34px;
             height: 33px;
             margin-right: 25px;
+
+            @media @screen-xs {
+              margin-right: 4px;
+            }
           }
           &__pay-btc {
             display: inline-block;
@@ -161,6 +167,10 @@
             height: 23px;
             margin-right: 20px;
             vertical-align: top;
+
+            @media @screen-xs {
+              margin-right: 0;
+            }
           }
           &__pay-etc {
             display: inline-block;
@@ -178,7 +188,7 @@
           vertical-align: top;
 
           @media @screen-xs {
-            display: block;
+            display: inline-block;
             margin: 0;
           }
         }
@@ -209,7 +219,7 @@
       margin-top: 30px;
     }
     @media @screen-xs {
-      margin-top: 30px;
+      margin-top: 5px;
       padding-bottom: 30px;
     }
   }

@@ -11,11 +11,33 @@
     margin-right: 25px;
     .align-center();
     line-height: 103px;
+
+    @media @screen-md {
+      .size(80px,80px);
+      margin-right: 15px;
+      line-height: 80px;
+    }
+    @media @screen-xs {
+      display: block;
+      .size(80px,80px);
+      margin-right: 10px;
+      line-height: 80px;
+      float: left;
+    }
   }
     &__pic img {
       max-width: 103px;
       max-height: 103px;
       vertical-align: middle;
+
+      @media @screen-md {
+        max-width: 80px;
+        max-height: 80px;
+      }
+      @media @screen-xs {
+        max-width: 80px;
+        max-height: 80px;
+      }
     }
 
   &__name {
@@ -29,6 +51,21 @@
     text-decoration: underline;
     vertical-align: middle;
     .transition();
+
+    @media @screen-lg {
+      width: 400px;
+      margin-right: 10px;
+    }
+    @media @screen-md {
+      width: 295px;
+      margin-right: 10px;
+    }
+    @media @screen-xs {
+      display: block;
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
   &__name:hover {
     color: @red-039;
@@ -43,6 +80,13 @@
     color: @red-039;
     font-weight: bold;
     vertical-align: middle;
+
+    @media @screen-md {
+      width: 100px;
+    }
+    @media @screen-xs {
+      margin-bottom: 15px;
+    }
   }
   &__sum--empty {
     color: #818181;
@@ -57,6 +101,13 @@
     .font-size(1.5rem,normal);
     color: @black-28;
     font-weight: bold;
+
+    @media @screen-lg {
+      margin-right: 20px;
+    }
+    @media @screen-md {
+      margin-right: 10px;
+    }
   }
     &__minus, &__plus {
       display: inline-block;
@@ -88,6 +139,11 @@
     text-decoration: underline;
     .uppercase();
     .transition();
+
+    @media @screen-md {
+      width: 120px;
+      padding-left: 44px;
+    }
   }
   &__to-cart::before {
     .absolute();
@@ -109,5 +165,14 @@
     font-weight: bold;
     text-align: right;
     float: right;
+
+    @media @screen-md {
+      line-height: 80px;
+    }
+    @media @screen-xs {
+      float: none;
+      .align-center();
+      line-height: normal;
+    }
   }
 }

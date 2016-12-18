@@ -2,6 +2,10 @@
   &__table {
     width: 100%;
     margin-bottom: 57px;
+
+    @media @screen-xs {
+      margin-bottom: 40px;
+    }
   }
     &__table thead tr {
       .bg-color(@color);
@@ -29,6 +33,10 @@
     .uppercase();
     .align-center();
     vertical-align: middle;
+
+    @media @screen-xs {
+      font-size: 1.3rem;
+    }
   }
     &__num {
       .font-family(@font-reg);
@@ -36,6 +44,10 @@
       color: @color;
       .no-decor();
       .transition();
+
+      @media @screen-xs {
+        font-size: 1.3rem;
+      }
     }
     &__num:hover {
       color: @red-039;
@@ -45,10 +57,18 @@
       .font-size(1.7rem,normal);
       color: @red-039;
       font-weight: bold;
+
+      @media @screen-xs {
+        font-size: 1.3rem;
+      }
     }
     &__status {
       .relative();
       padding-left: 29px;
+
+      @media @screen-xs {
+        padding-left: 0;
+      }
     }
     &__status::before {
       display: block;
@@ -58,5 +78,18 @@
       .bg-image("../images/spritesheet.png");
       background-position: -72px -247px;
       content: '';
+
+      @media @screen-xs {
+        display: none;
+      }
     }
+}
+
+.personal-tab .page-nav {
+  @media @screen-md {
+    margin-bottom: 40px;
+  }
+  @media @screen-xs {
+    margin-bottom: 20px;
+  }
 }

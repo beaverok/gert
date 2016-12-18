@@ -5,10 +5,19 @@
   .relative();
   margin-bottom: 23px;
 
+  @media @screen-xs {
+    height: auto;
+    padding: 10px 0 20px 5px;
+  }
+
   &__range {
     display: inline-block;
     width: 347px;
     margin: 0 35px 0 55px;
+
+    @media @screen-xs {
+      width: auto;
+    }
   }
 
   &__select-wrap {
@@ -16,6 +25,14 @@
     width: 299px;
     margin-top: 22px;
     margin-right: 63px;
+
+    @media @screen-lg {
+      width: 245px;
+      margin-right: 20px;
+    }
+    @media @screen-xs {
+      margin-right: 0;
+    }
   }
     &__select-label {
       margin-bottom: 25px;
@@ -33,6 +50,11 @@
         .font-size(1.5rem,45px);
         color: @black-28;
         font-weight: bold;
+
+        @media @screen-lg {
+          width: 245px;
+          margin-right: 20px;
+        }
       }
       &__select-wrap .sbToggle {
         display: block;

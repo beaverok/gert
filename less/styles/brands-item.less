@@ -6,9 +6,30 @@
   padding: 28px 25px 26px;
   .bg-color(@white);
   vertical-align: top;
+  text-align: left;
+
+  @media @screen-lg {
+    width: 320px;
+    margin-right: 15px;
+  }
+  @media @screen-md {
+    width: 320px;
+    margin: 0 10px 15px;
+  }
+  @media @screen-xs {
+    width: 310px;
+    margin: 0 auto 15px;
+  }
 
   &:nth-of-type(3n) {
     margin-right: 0;
+
+    @media @screen-md {
+      margin: 0 10px 15px;
+    }
+    @media @screen-xs {
+      margin: 0 auto 15px;
+    }
   }
 
     &__name {

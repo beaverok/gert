@@ -3,6 +3,13 @@
   .container();
   margin-bottom: 107px;
 
+  @media @screen-md {
+    margin-bottom: 0;
+  }
+  @media @screen-xs {
+    margin-bottom: 0;
+  }
+
   &__title {
     margin-bottom: 38px;
     .font-family(@font-bold);
@@ -24,6 +31,11 @@
     .uppercase();
     .align-center();
     .no-decor();
+
+    @media @screen-xs {
+      width: 110px;
+      padding-left: 22px;
+    }
   }
   &__logout::before {
     display: block;
@@ -34,6 +46,10 @@
     .absolute();
     .pos(15px,27px);
     content: '';
+
+    @media @screen-xs {
+      left: 10px;
+    }
   }
 
   &__download {
@@ -48,6 +64,10 @@
     font-weight: bold;
     text-decoration: underline;
     .transition();
+
+    @media @screen-xs {
+      margin-left: 0;
+    }
   }
   &__download:hover {
     color: @red-039;
@@ -65,6 +85,10 @@
 
   &__sections {
     margin-bottom: 39px;
+
+    @media @screen-xs {
+      margin-bottom: 10px;
+    }
   }
     &__section {
       display: inline-block;
@@ -75,6 +99,12 @@
       .align-center();
       .no-decor();
       .transition();
+
+      @media @screen-xs {
+        height: 30px;
+        margin-bottom: 10px;
+        padding: 0 15px;
+      }
     }
     &__section:hover {
       .bg-color(@red-039);
@@ -84,6 +114,10 @@
         .font-size(1.4rem,37px);
         color: @color;
         text-decoration: underline;
+
+        @media @screen-xs {
+          line-height: 24px;
+        }
       }
       &__section:hover span {
         color: @white;
@@ -94,6 +128,14 @@
     .bg-image("../images/bg_curve.png");
     background-position: 0 0;
     background-repeat: repeat-x;
+
+    @media @screen-md {
+      margin-bottom: 38px;
+    }
+    @media @screen-xs {
+      margin-bottom: 40px;
+    }
+
   }
 }
 
