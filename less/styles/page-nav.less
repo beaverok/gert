@@ -17,6 +17,7 @@
       width: 11px;
       height: 16px;
       margin-right: 50px;
+      vertical-align: middle;
     }
     &__next {
       display: inline-block;
@@ -25,6 +26,7 @@
       width: 11px;
       height: 16px;
       margin-left: 34px;
+      vertical-align: middle;
     }
 
     &__ul {
@@ -45,7 +47,16 @@
           .no-decor();
           .transition();
         }
-        &__li a:hover, &__li a.active {
+        &__li a:hover {
           color: @red-039;
+        }
+        &__current {
+          .font-family(@font-trebuchet);
+          .font-size(1.5rem,16px);
+          color: @red-039;
+          font-weight: bold;
+          .uppercase();
+          .no-decor();
+          .transition();
         }
 }
