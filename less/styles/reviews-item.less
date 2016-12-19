@@ -45,6 +45,7 @@
       max-width: 99px;
       height: auto;
       vertical-align: middle;
+      .rounded(99px);
 
       @media @screen-xs{
         max-width: 70px;
@@ -73,8 +74,14 @@
     &__rating {
       .size(97px,14px);
       margin-bottom: 8px;
-      .bg-image("../images/bg_stars.png");
+      .bg-image("../images/stars.png");
+      background-position: 0 0;
     }
+      &__rating-inner {
+        height: 14px;
+        .bg-image("../images/stars.png");
+        background-position: 0 -21px;
+      }
     &__text {
       .font-family(@font-arial);
       .font-size(1.3rem,2rem);

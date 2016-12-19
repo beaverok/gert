@@ -2716,6 +2716,7 @@ body {
   max-width: 99px;
   height: auto;
   vertical-align: middle;
+  border-radius: 99px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .reviews-item__foto img {
@@ -2749,7 +2750,13 @@ body {
   width: 97px;
   height: 14px;
   margin-bottom: 8px;
-  background-image: url("../images/bg_stars.png");
+  background-image: url("../images/stars.png");
+  background-position: 0 0;
+}
+.reviews-item__rating-inner {
+  height: 14px;
+  background-image: url("../images/stars.png");
+  background-position: 0 -21px;
 }
 .reviews-item__text {
   font-family: Arial, Helvetica, sans-serif;
