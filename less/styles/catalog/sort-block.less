@@ -1,0 +1,57 @@
+.sort-block {
+  margin-bottom: 38px;
+  text-align: right;
+
+  &__label {
+    display: inline-block;
+    margin-right: 21px;
+    .font-family(@font-bold);
+    .font-size(1.4rem,1.4rem);
+    color: @color;
+    .uppercase();
+  }
+  &__link {
+    display: inline-block;
+    .relative();
+    margin-right: 16px;
+    .font-family(@font-bold);
+    .font-size(1.4rem,1.4rem);
+    color: @color;
+    .uppercase();
+    text-decoration: underline;
+    .transition();
+  }
+  &__link:last-child {
+    margin-right: 0;
+  }
+  &__link:hover {
+    color: @red-039;
+  }
+  &__link--active {
+    color: @red-039;
+    .no-decor();
+  }
+  &__link--down {
+    padding-right: 11px;
+  }
+  &__link--down::after {
+    display: block;
+    .size(6px,3px);
+    .absolute();
+    top: 5px;
+    right: 0;
+    .bg-image("../images/spritesheet.png");
+    background-position: -122px -249px;
+    content: '';
+  }
+  &__link--up::after {
+    display: block;
+    .size(6px,3px);
+    .absolute();
+    top: 5px;
+    right: 0;
+    .bg-image("../images/spritesheet.png");
+    background-position: -122px -254px;
+    content: '';
+  }
+}

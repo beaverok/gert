@@ -11,6 +11,10 @@
     padding: 0;
   }
 
+  & a {
+    .no-decor();
+  }
+
   &::before {
     display: block;
     background-image: url(../images/spritesheet.png);
@@ -32,6 +36,12 @@
       .font-family(@font-trebuchet);
       .font-size(1.5rem, normal);
       color: @black-28;
+    }
+    & span {
+      .font-family(@font-trebuchet);
+      .font-size(1.5rem, normal);
+      color: @red-039;
+      font-weight: bold;
     }
     &__present {
       .font-family(@font-tahoma);
