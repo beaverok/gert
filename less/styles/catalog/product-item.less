@@ -50,6 +50,34 @@
     height: auto;
     vertical-align: middle;
   }
+  &__icon-discount {
+    background-image: url(../images/spritesheet.png);
+    background-position: -164px 0px;
+    width: 103px;
+    height: 103px;
+    .absolute();
+    top: -13px;
+    right: 4px;
+    padding-top: 26px;
+    .font-family(@font-bold);
+    line-height: normal;
+    color: @white;
+    .align-center();
+    .uppercase();
+  }
+    &__discount-num {
+      display: inline-block;
+      margin-bottom: 4px;
+      .font-size(3.3rem,3rem);
+      vertical-align: top;
+    }
+    &__discount-percent {
+      .font-size(2rem,2rem);
+    }
+    &__discount-text {
+      display: block;
+      .font-size(1.7rem,1.6rem);
+    }
   &__title {
     display: inline-block;
     margin-bottom: 16px;

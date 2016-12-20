@@ -103,8 +103,10 @@ body {
       }
     }
       &__logo img {
-        height: 100px;
 
+        @media @screen-md {
+          height: 100px;
+        }
         @media @screen-xs {
           height: 70px;
         }

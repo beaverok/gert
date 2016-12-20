@@ -617,8 +617,10 @@ body {
     top: 45px;
   }
 }
-.header__logo img {
-  height: 100px;
+@media (min-width: 751px) and (max-width: 1023px) {
+  .header__logo img {
+    height: 100px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .header__logo img {
@@ -6287,6 +6289,37 @@ body {
   height: auto;
   vertical-align: middle;
 }
+.product-item__icon-discount {
+  background-image: url(../images/spritesheet.png);
+  background-position: -164px 0px;
+  width: 103px;
+  height: 103px;
+  position: absolute;
+  top: -13px;
+  right: 4px;
+  padding-top: 26px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.product-item__discount-num {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 3.3rem;
+  line-height: 3rem;
+  vertical-align: top;
+}
+.product-item__discount-percent {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.product-item__discount-text {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.6rem;
+}
 .product-item__title {
   display: inline-block;
   margin-bottom: 16px;
@@ -6408,6 +6441,9 @@ body {
   text-decoration: none;
 }
 .sort-block__link--down {
+  padding-right: 11px;
+}
+.sort-block__link--up {
   padding-right: 11px;
 }
 .sort-block__link--down::after {

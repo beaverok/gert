@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     $('.auction-item__counter').timeTo(1000);
 
-    $('.price-filter__select').selectbox();
+    //$('.price-filter__select').selectbox();
 
     $('.product__rev-lnk').click(function () {
         var selected = $(this).attr('href');

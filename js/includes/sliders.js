@@ -10,6 +10,7 @@ $(document).ready(function () {
 
     if (w > 1023) {
         $('.index-auctions__list').bxSlider({
+            infiniteLoop: false,
             controls: true,
             pager: false,
             nextText: '',
@@ -45,6 +46,7 @@ $(document).ready(function () {
 
     if (w < 1024 && w > 640) {
         $('.index-auctions__list').bxSlider({
+            infiniteLoop: false,
             controls: true,
             pager: false,
             nextText: '',
@@ -79,6 +81,7 @@ $(document).ready(function () {
     }
     if (w < 640) {
         $('.index-auctions__list').bxSlider({
+            infiniteLoop: false,
             controls: true,
             pager: false,
             nextText: '',
