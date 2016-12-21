@@ -3,6 +3,7 @@
 
   &__left {
     width: 470px;
+    .relative();
     float: left;
 
     @media @screen-lg {
@@ -254,6 +255,7 @@
       }
 
       &__pay-block {
+        .relative();
         margin-top: 28px;
         padding-bottom: 27px;
         border-bottom: 1px solid @color;
@@ -267,6 +269,16 @@
           color: @red;
           font-weight: bold;
           vertical-align: middle;
+        }
+        &__price--old {
+          display: inline-block;
+          .absolute();
+          top: 42px;
+          left: 0;
+          .font-family(@font-trebuchet);
+          .font-size(1.4rem,normal);
+          color: @white;
+          vertical-align: super;
         }
         &__quan {
           display: inline-block;

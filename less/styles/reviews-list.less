@@ -33,8 +33,10 @@
       }
     }
       &__item-foto img {
-        max-width: 83px;
-        max-height: 83px;
+        width: 83px;
+        height: 83px;
+        .rounded(83px);
+        margin: -2px 0 0 -2px;
 
         @media @screen-xs {
           max-width: 100%;
@@ -166,6 +168,7 @@
           .font-family(@font-tahoma);
           .font-size(1.5rem,normal);
           color: @black-2c;
+          .no-decor();
 
           @media @screen-xs {
             margin-right: 12px;
@@ -189,6 +192,7 @@
           .font-family(@font-tahoma);
           .font-size(1.5rem,normal);
           color: @black-2c;
+          .no-decor();
 
           @media @screen-xs {
             padding-left: 26px;

@@ -3927,6 +3927,7 @@ body {
 }
 .product__left {
   width: 470px;
+  position: relative;
   float: left;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
@@ -4220,6 +4221,7 @@ body {
   content: '';
 }
 .product__pay-block {
+  position: relative;
   margin-top: 28px;
   padding-bottom: 27px;
   border-bottom: 1px solid #000;
@@ -4234,6 +4236,17 @@ body {
   color: #f20303;
   font-weight: bold;
   vertical-align: middle;
+}
+.product__price--old {
+  display: inline-block;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #fff;
+  vertical-align: super;
 }
 .product__quan {
   display: inline-block;
@@ -4389,8 +4402,10 @@ body {
   }
 }
 .reviews-list__item-foto img {
-  max-width: 83px;
-  max-height: 83px;
+  width: 83px;
+  height: 83px;
+  border-radius: 83px;
+  margin: -2px 0 0 -2px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .reviews-list__item-foto img {
@@ -4540,6 +4555,7 @@ body {
   font-size: 1.5rem;
   line-height: normal;
   color: #2c2c2c;
+  text-decoration: none;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .reviews-list__item-plus {
@@ -4565,6 +4581,7 @@ body {
   font-size: 1.5rem;
   line-height: normal;
   color: #2c2c2c;
+  text-decoration: none;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .reviews-list__item-minus {
