@@ -22,6 +22,8 @@
       .size(470px,470px);
       margin-bottom: 19px;
       .bg-color(@white);
+      .align-center();
+      line-height: 470px;
 
       @media @screen-lg {
         width: 360px;
@@ -35,6 +37,7 @@
       &__pic--big img {
         max-width: 470px;
         max-height: 470px;
+        vertical-align: middle;
 
         @media @screen-lg {
           max-width: 100%;
@@ -75,12 +78,13 @@
         display: block;
       }
       &__foto-item img {
-        max-width: 53px;
+        max-width: 70px;
         height: auto;
         vertical-align: middle;
       }
 
   &__right {
+    width: 100%;
     max-width: 641px;
     float: right;
 
@@ -118,9 +122,10 @@
         color: #2c2c2c;
         .no-decor();
         text-transform: none;
+        .transition();
       }
       &__brand:hover {
-        color: #2c2c2c;
+        color: @red-039;
       }
 
       &__rev-lnk {
@@ -132,6 +137,7 @@
         color: #2c2c2c;
         .no-decor();
         text-transform: none;
+        .transition();
 
         @media @screen-xs {
           bottom: -25px;
@@ -140,7 +146,7 @@
         }
       }
       &__rev-lnk:hover {
-        color: #2c2c2c;
+        color: @red-039;
       }
 
       &__stars {
@@ -254,6 +260,7 @@
       }
         &__price {
           display: inline-block;
+          width: 120px;
           margin-right: 30px;
           .font-family(@font-trebuchet);
           .font-size(2.8rem,2rem);
@@ -342,7 +349,16 @@
       height: 22px;
       content: '';
     }
-    &__to-fav:hover {
+    &__to-fav:hover, &__to-fav--active {
       border-color: @red-039;
+    }
+    &__to-fav--active::before {
+      .absolute();
+      .pos(8px,12px);
+      background-image: url(../images/spritesheet.png);
+      background-position: -155px -253px;
+      width: 25px;
+      height: 22px;
+      content: '';
     }
 }
