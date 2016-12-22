@@ -3446,7 +3446,7 @@ body {
   width: 1170px;
   margin: 0 auto;
   clear: both;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   font-family: Tahoma, Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 21px;
@@ -6585,7 +6585,6 @@ body {
 }
 .brand-page__section {
   display: inline-block;
-  border: 3px solid #f20303;
   margin-right: 3px;
   text-align: center;
   vertical-align: top;
@@ -6596,19 +6595,20 @@ body {
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
 }
-.brand-page__section:hover,
-.brand-page__section--current {
-  border-color: #000;
-}
-.brand-page__section a {
+.brand-page__section-lnk {
   display: inline-block;
   padding: 13px 28px 11px;
+  border: 3px solid #f20303;
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: normal;
   color: #000;
   text-transform: uppercase;
   text-decoration: underline;
+}
+.brand-page__section-lnk:hover,
+.brand-page__section--current {
+  border-color: #000;
 }
 .brand-page__tab {
   display: none;

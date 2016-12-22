@@ -39,25 +39,24 @@
       }
         &__section {
           display: inline-block;
-          border: 3px solid @red;
           margin-right: 3px;
           .align-center();
           vertical-align: top;
           .transition();
         }
-        &__section:hover, &__section--current {
-          border-color: @color;
-        }
-          &__section a {
+          &__section-lnk {
             display: inline-block;
             padding: 13px 28px 11px;
+            border: 3px solid @red;
             .font-family(@font-bold);
             .font-size(1.4rem,normal);
             color: @color;
             .uppercase();
             text-decoration: underline;
           }
-
+          &__section-lnk:hover, &__section--current {
+            border-color: @color;
+          }
       &__tab {
         display: none;
       }

@@ -9,20 +9,20 @@
 
         .brand-page__products
             ul.brand-page__sections
-                li.brand-page__section.brand-page__section--current
-                    a(href="#tab1") раздел 1
                 li.brand-page__section
-                    a(href="#tab2") раздел 2
+                    a.brand-page__section-lnk.brand-page__section--current(href="#tab1") раздел 1
                 li.brand-page__section
-                    a(href="#tab1") раздел 3
+                    a.brand-page__section-lnk(href="#tab2") раздел 2
                 li.brand-page__section
-                    a(href="#tab1") раздел 4
+                    a.brand-page__section-lnk(href="#tab1") раздел 3
                 li.brand-page__section
-                    a(href="#tab1") раздел 5
+                    a.brand-page__section-lnk(href="#tab1") раздел 4
                 li.brand-page__section
-                    a(href="#tab1") раздел 6
+                    a.brand-page__section-lnk(href="#tab1") раздел 5
                 li.brand-page__section
-                    a(href="#tab1") раздел 7
+                    a.brand-page__section-lnk(href="#tab1") раздел 6
+                li.brand-page__section
+                    a.brand-page__section-lnk(href="#tab1") раздел 7
 
             .brand-page__tab.brand-page__tab--active#tab1
                 include ../catalog/product-item

@@ -6993,8 +6993,8 @@ $(".personal-tabs__lnk").click(function() {
     return false;
 });
 
-$(".brand-page__section a").click(function() {
-    var parentBox = $(this).parents('.brand-page__sections');
+$(".brand-page__section-lnk").click(function() {
+    var parentBox = $(this).parents('.brand-page__products');
 
     $(parentBox).find("a").removeClass("brand-page__section--current");
     $(this).addClass("brand-page__section--current");
