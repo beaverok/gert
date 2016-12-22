@@ -1,0 +1,67 @@
+.brand-page {
+  margin-bottom: 70px;
+
+  &__inner {
+    .container();
+  }
+
+    &__logo {
+      .size(240px,160px);
+      margin-right: 30px;
+      margin-bottom: 58px;
+      line-height: 160px;
+      .align-center();
+      float: left;
+      .bg-color(@white);
+    }
+      &__logo img {
+        max-width: 90%;
+        height: auto;
+        vertical-align: middle;
+      }
+
+    &__descr p {
+      margin-bottom: 20px;
+      .font-family(@font-tahoma);
+      .font-size(1.5rem,21px);
+      color: @black-2c;
+      opacity: 0.9;
+    }
+
+    &__products {
+      width: 100%;
+      margin-bottom: -27px;
+      clear: both;
+    }
+      &__sections {
+        .ul-reset();
+        margin-bottom: 51px;
+      }
+        &__section {
+          display: inline-block;
+          border: 3px solid @red;
+          margin-right: 3px;
+          .align-center();
+          vertical-align: top;
+          .transition();
+        }
+        &__section:hover, &__section--current {
+          border-color: @color;
+        }
+          &__section a {
+            display: inline-block;
+            padding: 13px 28px 11px;
+            .font-family(@font-bold);
+            .font-size(1.4rem,normal);
+            color: @color;
+            .uppercase();
+            text-decoration: underline;
+          }
+
+      &__tab {
+        display: none;
+      }
+      &__tab--active {
+        display: block;
+      }
+}

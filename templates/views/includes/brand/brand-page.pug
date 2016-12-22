@@ -1,0 +1,40 @@
+.brand-page
+    .brand-page__inner
+        .brand-page__logo
+            img(src="images/brand_11.png",alt="")
+
+        .brand-page__descr
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+
+        .brand-page__products
+            ul.brand-page__sections
+                li.brand-page__section.brand-page__section--current
+                    a(href="#tab1") раздел 1
+                li.brand-page__section
+                    a(href="#tab2") раздел 2
+                li.brand-page__section
+                    a(href="#tab1") раздел 3
+                li.brand-page__section
+                    a(href="#tab1") раздел 4
+                li.brand-page__section
+                    a(href="#tab1") раздел 5
+                li.brand-page__section
+                    a(href="#tab1") раздел 6
+                li.brand-page__section
+                    a(href="#tab1") раздел 7
+
+            .brand-page__tab.brand-page__tab--active#tab1
+                include ../catalog/product-item
+                include ../catalog/product-item
+                include ../catalog/product-item
+                include ../catalog/product-item
+                include ../catalog/product-item
+                include ../catalog/product-item
+
+            .brand-page__tab#tab2
+                include ../catalog/product-item
+                include ../catalog/product-item
+                include ../catalog/product-item
+
+        include ../index-advants

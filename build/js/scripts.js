@@ -6993,6 +6993,19 @@ $(".personal-tabs__lnk").click(function() {
     return false;
 });
 
+$(".brand-page__section a").click(function() {
+    var parentBox = $(this).parents('.brand-page__sections');
+
+    $(parentBox).find("a").removeClass("brand-page__section--current");
+    $(this).addClass("brand-page__section--current");
+    $(".brand-page__tab").hide();
+
+    var activeTab = $(this).attr("href");
+    $(activeTab).fadeIn();
+    $(activeTab).find("> ul:not(.brand-page__section--current)").addClass('brand-page__section--current');
+    return false;
+});
+
 $(".product-page__tabs-link").click(function() {
     var parentBox = $(this).parents('.product-page__tabs');
 
