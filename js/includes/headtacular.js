@@ -1,1 +1,1 @@
-$('.page-header').headtacular({ scrollPoint: 50 });
+$('.header').headtacular({ scrollPoint: 50 });

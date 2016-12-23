@@ -503,9 +503,15 @@ body {
   z-index: 10100;
   height: 60px;
   border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+.header.is-stuck .header__inner {
+  height: 60px;
 }
 .header.is-stuck .header__logo {
-  margin-top: 7px;
+  margin-top: -21px;
+  width: 50px;
+  height: 52px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .header.is-stuck .header__logo {
@@ -513,20 +519,36 @@ body {
     margin-right: 25px;
   }
 }
+.header.is-stuck .header__logo img {
+  height: 52px;
+}
 @media (min-width: 751px) and (max-width: 1023px) {
   .header.is-stuck .header__logo img {
     max-width: 120px;
   }
+}
+.header.is-stuck .top-menu,
+.header.is-stuck .header__slogan {
+  display: none;
+}
+.header.is-stuck .header__url {
+  top: 5px;
+  left: 60px;
+  font-size: 2.5rem;
+}
+.header.is-stuck .main-menu {
+  bottom: 0;
+  left: 60px;
+  right: auto;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .header.is-stuck .main-menu {
     clear: none;
   }
 }
-@media (min-width: 751px) and (max-width: 1023px) {
-  .header.is-stuck .main-menu__item {
-    margin-right: 0;
-  }
+.header.is-stuck .main-menu__item {
+  margin-left: 0;
+  margin-right: 10px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .header.is-stuck .main-menu__list {
@@ -538,6 +560,9 @@ body {
     top: 60px;
   }
 }
+.header.is-stuck .main-menu__link {
+  line-height: 30px;
+}
 @media (min-width: 751px) and (max-width: 1023px) {
   .header.is-stuck .main-menu__link {
     padding: 0 8px;
@@ -548,6 +573,29 @@ body {
   .header.is-stuck .main-menu__link {
     line-height: 30px;
   }
+}
+.header.is-stuck .header-cart {
+  width: 158px;
+  top: 9px;
+  right: 390px;
+  padding-left: 0;
+}
+.header.is-stuck .header-cart::before {
+  display: none;
+}
+.header.is-stuck .header-cart__title {
+  display: inline-block;
+  margin-right: 10px;
+}
+.header.is-stuck .header__top-right {
+  top: 8px;
+  right: auto;
+  left: 209px;
+}
+.header.is-stuck .header-search {
+  top: 6px;
+  right: 0;
+  border: 1px solid #000;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .header {
@@ -3569,6 +3617,65 @@ body {
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
 }
+.button-up {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 17px;
+  z-index: 1000;
+  border: 3px solid #000;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.button-up:hover {
+  border-color: #f20303;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .button-up {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .button-up {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .button-up {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+.button-up--project {
+  background-color: rgba(70, 70, 70, 0.12);
+}
+.button-up--project:hover {
+  background-color: #464646;
+}
+.button-up a {
+  display: block;
+  width: 26px;
+  height: 18px;
+  background-image: url("../images/sprite.png");
+  background-position: 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -9px 0 0 -13px;
+}
+.button-up:hover a {
+  background-position: -27px 0;
+}
 .brands-page__inner {
   width: 1170px;
   margin: 0 auto;
@@ -5185,12 +5292,21 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .price-page__logout {
     width: 110px;
     padding-left: 22px;
   }
+}
+.price-page__logout:hover {
+  border-color: #f20303;
 }
 .price-page__logout::before {
   display: block;
@@ -5233,7 +5349,7 @@ body {
   }
 }
 .price-page__download:hover {
-  color: #ff0039;
+  color: #f20303;
 }
 .price-page__download::before {
   display: block;
@@ -5259,7 +5375,7 @@ body {
   height: 43px;
   margin-right: 8px;
   padding: 0 24px;
-  border: 3px solid #ff0039;
+  border: 3px solid #f20303;
   text-align: center;
   text-decoration: none;
   -webkit-transition: top 400ms linear;
@@ -5276,8 +5392,9 @@ body {
     padding: 0 15px;
   }
 }
-.price-page__section:hover {
-  background-color: #ff0039;
+.price-page__section:hover,
+.price-page__section--current {
+  border-color: #000;
 }
 .price-page__section span {
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
@@ -5291,8 +5408,13 @@ body {
     line-height: 24px;
   }
 }
-.price-page__section:hover span {
-  color: #fff;
+.price-page__h3 {
+  margin-bottom: 20px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 14px;
+  color: #000;
+  text-transform: uppercase;
 }
 .price-page__list {
   margin-bottom: 73px;
@@ -5471,8 +5593,8 @@ body {
   }
 }
 .price-item__pic img {
-  max-width: 103px;
-  max-height: 103px;
+  max-width: 85px;
+  max-height: 85px;
   vertical-align: middle;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
@@ -5526,7 +5648,7 @@ body {
   }
 }
 .price-item__name:hover {
-  color: #ff0039;
+  color: #f20303;
 }
 .price-item__sum {
   display: inline-block;
@@ -5584,6 +5706,12 @@ body {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+.price-item__plus {
+  position: relative;
+  left: -4px;
 }
 .price-item__quan-input {
   display: inline-block;
@@ -5600,7 +5728,7 @@ body {
   height: 44px;
   position: relative;
   padding-left: 50px;
-  border: 3px solid #ff0039;
+  border: 3px solid #f20303;
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 3.6rem;
@@ -5631,7 +5759,7 @@ body {
   content: '';
 }
 .price-item__to-cart:hover {
-  background-color: #ff0039;
+  border-color: #000;
 }
 .price-item__empty {
   font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
@@ -5731,12 +5859,21 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .personal-page__logout {
     width: 110px;
     padding-left: 22px;
   }
+}
+.personal-page__logout:hover {
+  border-color: #f20303;
 }
 .personal-page__logout::before {
   display: block;
