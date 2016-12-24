@@ -1,5 +1,11 @@
 $(document).ready(function () {
-   // mobile menu open-close
+    $('#main-menu').dcMegaMenu({
+        rowItems: '4',
+        speed: 'fast',
+        effect: 'fade'
+    });
+
+    // mobile menu open-close
     $('.main-menu__open-btn').click(function () {
         $('.main-menu').slideToggle();
     });
