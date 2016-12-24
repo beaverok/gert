@@ -1,16 +1,15 @@
 .button-up {
-  .size(73px, 73px);
-  background-color: rgba(196,38,29,0.5);
+  .size(50px, 50px);
   position: fixed;
-  bottom: 95px;
-  right: 95px;
+  bottom: 50px;
+  right: 17px;
   z-index: 1000;
-  .rounded(73px);
+  border: 3px solid @color;
   .transition();
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(196,38,29,1);
+    border-color: @red;
   }
 
   @media @screen-lg {
@@ -36,10 +35,14 @@
 
   & a {
     display: block;
-    .size(30px,21px);
-    .bg-image("../img/icon_top-btn-arrow.png");
+    .size(26px,18px);
+    .bg-image("../images/sprite.png");
+    background-position: 0 0;
     .absolute();
     .pos(50%,50%);
-    margin: -10px 0 0 -15px;
+    margin: -9px 0 0 -13px;
+  }
+  &:hover a {
+    background-position: -27px 0;
   }
 }

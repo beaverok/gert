@@ -49,4 +49,9 @@ $(document).ready(function () {
         $('.product__pic--big a').attr('href',pic);
     });
 
+    $('.price-page__section').click(function () {
+        var selected = $(this).attr('href');
+        $.scrollTo(selected, 1000, { offset: -70 });
+    });
+
 });

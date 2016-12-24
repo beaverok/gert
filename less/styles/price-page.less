@@ -31,11 +31,15 @@
     .uppercase();
     .align-center();
     .no-decor();
+    .transition();
 
     @media @screen-xs {
       width: 110px;
       padding-left: 22px;
     }
+  }
+  &__logout:hover {
+    border-color: @red;
   }
   &__logout::before {
     display: block;
@@ -70,7 +74,7 @@
     }
   }
   &__download:hover {
-    color: @red-039;
+    color: @red;
   }
     &__download::before {
       display: block;
@@ -95,7 +99,7 @@
       height: 43px;
       margin-right: 8px;
       padding: 0 24px;
-      border: 3px solid @red-039;
+      border: 3px solid @red;
       .align-center();
       .no-decor();
       .transition();
@@ -106,8 +110,8 @@
         padding: 0 15px;
       }
     }
-    &__section:hover {
-      .bg-color(@red-039);
+    &__section:hover, &__section--current {
+      border-color: @color;
     }
       &__section span {
         .font-family(@font-bold);
@@ -119,10 +123,13 @@
           line-height: 24px;
         }
       }
-      &__section:hover span {
-        color: @white;
-      }
-
+  &__h3 {
+    margin-bottom: 20px;
+    .font-family(@font-bold);
+    .font-size(1.4rem,14px);
+    color: @color;
+    .uppercase();
+  }
   &__list {
     margin-bottom: 73px;
     .bg-image("../images/bg_curve.png");

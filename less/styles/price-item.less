@@ -26,8 +26,8 @@
     }
   }
     &__pic img {
-      max-width: 103px;
-      max-height: 103px;
+      max-width: 85px;
+      max-height: 85px;
       vertical-align: middle;
 
       @media @screen-md {
@@ -68,7 +68,7 @@
     }
   }
   &__name:hover {
-    color: @red-039;
+    color: @red;
   }
 
   &__sum {
@@ -117,6 +117,12 @@
       .align-center();
       vertical-align: middle;
       cursor: pointer;
+      .no-decor();
+      color: @color;
+    }
+    &__plus {
+      .relative();
+      left: -4px;
     }
     &__quan-input {
       display: inline-block;
@@ -132,7 +138,7 @@
     .size(140px,44px);
     .relative();
     padding-left: 50px;
-    border: 3px solid @red-039;
+    border: 3px solid @red;
     .font-family(@font-bold);
     .font-size(1.4rem,3.6rem);
     color: @color;
@@ -155,7 +161,7 @@
     content: '';
   }
   &__to-cart:hover {
-    .bg-color(@red-039);
+    border-color: @color;
   }
 
   &__empty {

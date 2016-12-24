@@ -44,11 +44,15 @@
     .uppercase();
     .align-center();
     .no-decor();
+    .transition();
 
     @media @screen-xs {
       width: 110px;
       padding-left: 22px;
     }
+  }
+  &__logout:hover {
+    border-color: @red;
   }
   &__logout::before {
     display: block;

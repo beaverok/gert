@@ -7011,6 +7011,11 @@ $(document).ready(function () {
         $('.product__pic--big a').attr('href',pic);
     });
 
+    $('.price-page__section').click(function () {
+        var selected = $(this).attr('href');
+        $.scrollTo(selected, 1000, { offset: -70 });
+    });
+
 });
 
 $('.top-slider__play-btn').fancybox({
@@ -7112,7 +7117,7 @@ $('.fancy-link').fancybox();
 };
 
 google.maps.event.addDomListener(window, 'load', g_map);*/
-$('.page-header').headtacular({ scrollPoint: 50 });
+$('.header').headtacular({ scrollPoint: 50 });
 $(".input--phone").mask("+7 (999) 999-99-99");
 $(document).ready(function () {
     var w = $(window).width();
