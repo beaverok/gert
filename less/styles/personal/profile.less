@@ -1,0 +1,41 @@
+.profile {
+ &__label {
+   .font-family(@font-reg);
+   .font-size(1.8rem, 18px);
+   color: @color;
+ }
+ &__text {
+   .font-family(@font-tahoma);
+   .font-size(1.6rem, 18px);
+   color: @black-2c;
+ }
+ &__save {
+   display: block;
+   .size(200px, 45px);
+   margin-top: 20px;
+   border: 3px solid @red;
+   .bg-color(transparent);
+   .font-family(@font-bold);
+   .font-size(1.9rem, 35px);
+   color: @color;
+   .align-center();
+   cursor: pointer;
+   .transition();
+ }
+  &__save:hover {
+    border-color: @color;
+  }
+}
+
+.profile-table {
+  & td {
+    padding: 10px 10px 10px 0;
+  }
+  & input {
+    .size(250px, 35px);
+    padding: 0 20px;
+    .font-family(@font-tahoma);
+    .font-size(1.8rem, normal);
+    color: @black-2c;
+  }
+}

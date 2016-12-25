@@ -142,7 +142,7 @@
       display: block;
       .size(235px,59px);
       margin: 0 auto 24px;
-      border: 3px solid @red-039;
+      border: 3px solid @red;
       .bg-color(transparent);
       .font-family(@font-bold);
       .font-size(1.9rem,54px);
@@ -152,8 +152,9 @@
       .transition();
     }
     &__submit-btn:hover {
-      .bg-color(@red-039);
-      color: @white;
+      //.bg-color(@red-039);
+      //color: @white;
+      border-color: @color;
     }
     &__submit-note {
       .font-family(@font-tahoma);

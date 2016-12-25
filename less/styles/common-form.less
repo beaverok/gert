@@ -1,0 +1,62 @@
+.common-form {
+  padding: 20px 30px;
+
+  &__title {
+    margin-bottom: 21px;
+    .font-family(@font-bold);
+    .font-size(1.8rem,15px);
+    color: @color;
+    .uppercase();
+  }
+  &__input-wrap {
+    width: 330px;
+    margin-bottom: 8px;
+  }
+    &__label {
+      margin-bottom: 6px;
+      .font-family(@font-trebuchet);
+      .font-size(1.5rem, 15px);
+      color: @black-28;
+      font-weight: bold;
+    }
+    &__input {
+      width: 100%;
+      height: 45px;
+      padding: 0 20px;
+      border: 1px solid @black-2c;
+      .font-family(@font-trebuchet);
+      .font-size(1.5rem, normal);
+      color: @black-28;
+      font-weight: bold;
+    }
+
+  &__submit-btn {
+    display: block;
+    .size(200px,45px);
+    margin: 20px auto;
+    border: 3px solid @red;
+    background: none;
+    .font-family(@font-bold);
+    .font-size(1.8rem, 42px);
+    color: @color;
+    .align-center();
+    .uppercase();
+    .transition();
+    cursor: pointer;
+  }
+  &__submit-btn:hover {
+    border-color: @color;
+  }
+
+  &__link {
+    margin-right: 10px;
+    .font-family(@font-tahoma);
+    .font-size(1.5rem, normal);
+    color: @black-28;
+    text-decoration: underline;
+    .transition();
+  }
+  &__link:hover {
+    color: @red;
+  }
+}

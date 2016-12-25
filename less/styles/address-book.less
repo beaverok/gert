@@ -1,0 +1,105 @@
+.profile-list {
+  & p {
+    .font-family(@font-tahoma);
+    .font-size(1.6rem,21px);
+    color: @black-2c;
+  }
+}
+.profile-item {
+  width:300px;
+  margin:0 50px 20px 0;
+  padding: 15px;
+  border:1px solid @color;
+  float:left;
+
+  & .line {
+    margin-bottom: 5px;
+  }
+  & .name {
+    margin-bottom:5px;
+    .font-family(@font-bold);
+    .font-size(1.8rem,18px);
+    color: @color;
+  }
+  & .val {
+    .font-family(@font-tahoma);
+    .font-size(1.6rem,18px);
+    color: @black-2c;
+  }
+  & a {
+    margin-right: 10px;
+    .font-family(@font-tahoma);
+    .font-size(1.6rem,18px);
+    color: @black-2c;
+    .transition();
+    text-decoration: underline;
+  }
+  & a:hover {
+    color: @red;
+  }
+}
+
+.add-profile-btn {
+  display: block;
+  .size(235px,59px);
+  margin: 0 auto 24px;
+  border: 3px solid @red;
+  .bg-color(transparent);
+  .font-family(@font-bold);
+  .font-size(1.9rem,54px);
+  color: @color;
+  .align-center();
+  cursor: pointer;
+  .transition();
+
+  &:hover {
+    border-color: @color;
+  }
+}
+
+.sale_personal_profile_detail {
+  & td {
+    padding: 10px 0;
+  }
+  & .title {
+    margin-bottom: 5px;
+    .font-family(@font-bold);
+    .font-size(1.8rem, 18px);
+    color: @color;
+  }
+  & .name {
+    margin-bottom: 5px;
+    .font-family(@font-reg);
+    .font-size(1.8rem, 18px);
+    color: @black-2c;
+  }
+  & input[type="text"] {
+    .size(250px,35px);
+    padding: 0 10px;
+    .font-family(@font-tahoma);
+    .font-size(1.8rem,normal);
+    color: @black-2c;
+  }
+  & .required {
+    color: @red;
+  }
+}
+
+.profile-save {
+  & input[type="submit"] {
+    display: inline-block;
+    .size(200px, 45px);
+    margin-right: 10px;
+    border: 3px solid @red;
+    .bg-color(transparent);
+    .font-family(@font-bold);
+    .font-size(1.9rem, 35px);
+    color: @color;
+    .align-center();
+    cursor: pointer;
+    .transition();
+  }
+  & input[type="submit"]:hover {
+    border-color: @color;
+  }
+}

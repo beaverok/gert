@@ -43,6 +43,9 @@
         margin: 0 0 5px;
       }
     }
+    &__level1:first-child {
+      margin-left: 0;
+    }
       &__link {
         display: inline-block;
         padding: 0;
@@ -69,10 +72,21 @@
           background: none;
         }
       }
+    &__pic {
+      max-width: 100px;
+      max-height: 60px;
+      margin-right: 10px;
+      float: left;
+    }
+    &__pic + span {
+      display: block;
+      float: left;
+      line-height: 60px;
+    }
 
-    /*&__submenu {
+    &__submenu {
       display: none;
-      width: 283px;
+      /*width: 283px;
       .absolute();
       top: 98px;
       padding: 25px 20px 12px;
@@ -87,59 +101,59 @@
         top: 20px;
         left: 0;
         padding: 12px 10px 10px;
+      }*/
+    }
+  /*&__submenu::before {
+    display: inline-block;
+    .size(0,0);
+    .absolute();
+    top: -6px;
+    left: 48px;
+    content: '';
+    border-style: solid;
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent @red transparent;
+
+    @media @screen-xs {
+      display: none;
+    }
+  }
+    &__submenu-item {
+      display: block;
+      .relative();
+      margin-bottom: 13px;
+      padding-left: 21px;
+      text-align: left;
+
+      @media @screen-xs {
+        padding-left: 0;
       }
     }
-    &__submenu::before {
-      display: inline-block;
-      .size(0,0);
+    &__submenu-item:hover::before {
+      left: 5px;
+    }
+    &__submenu-item::before {
+      display: block;
+      .size(8px,12px);
       .absolute();
-      top: -6px;
-      left: 48px;
+      .pos(2px,0);
+      .bg();
+      .bg-image("../img/spritesheet2.png");
+      background-position: -86px -58px;
       content: '';
-      border-style: solid;
-      border-width: 0 6px 6px 6px;
-      border-color: transparent transparent @red transparent;
+      .transition();
 
       @media @screen-xs {
         display: none;
       }
     }
-      &__submenu-item {
-        display: block;
-        .relative();
-        margin-bottom: 13px;
-        padding-left: 21px;
-        text-align: left;
-
-        @media @screen-xs {
-          padding-left: 0;
-        }
-      }
-      &__submenu-item:hover::before {
-        left: 5px;
-      }
-      &__submenu-item::before {
-        display: block;
-        .size(8px,12px);
-        .absolute();
-        .pos(2px,0);
-        .bg();
-        .bg-image("../img/spritesheet2.png");
-        background-position: -86px -58px;
-        content: '';
-        .transition();
-
-        @media @screen-xs {
-          display: none;
-        }
-      }
-        &__submenu-link {
-          .font-family(@font-bold);
-          .font-size(1.6rem, 16px);
-          color: @white;
-          .no-decor();
-          .transition(0.5s);
-        }*/
+      &__submenu-link {
+        .font-family(@font-bold);
+        .font-size(1.6rem, 16px);
+        color: @white;
+        .no-decor();
+        .transition(0.5s);
+      }*/
 
     &__open-btn {
       display: none;

@@ -1,0 +1,80 @@
+.reg-page {
+  width: 830px;
+  margin: 69px auto;
+
+  &__left {
+    float: left;
+    width: 330px;
+    margin-left: 34px;
+  }
+    &__input-wrap {
+      width: 330px;
+      margin-bottom: 8px;
+    }
+      &__label {
+        margin-bottom: 6px;
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem, 15px);
+        color: @black-28;
+        font-weight: bold;
+      }
+      &__input {
+        width: 100%;
+        height: 45px;
+        padding: 0 20px;
+        .font-family(@font-trebuchet);
+        .font-size(1.5rem, normal);
+        color: @black-28;
+        font-weight: bold;
+      }
+      & .required {
+        color: @red-039;
+      }
+  &__right {
+    float: right;
+    width: 330px;
+    margin-right: 34px;
+  }
+
+  &__text {
+    width: 100%;
+    clear: both;
+    .relative();
+    top: 28px;
+    margin: 0 0 65px;
+    padding: 0 95px;
+    .font-family(@font-tahoma);
+    .font-size(1.5rem, 22px);
+    color: @black-2c;
+    .align-center();
+  }
+
+  &__submit-wrap {
+    width: 100%;
+    border-top: 1px solid @color;
+    padding-top: 44px;
+  }
+    &__submit-btn {
+      display: block;
+      .size(235px,59px);
+      margin: 0 auto 24px;
+      border: 3px solid @red;
+      background: none;
+      .font-family(@font-bold);
+      .font-size(1.9rem, 56px);
+      color: @color;
+      .align-center();
+      .uppercase();
+      .transition();
+      cursor: pointer;
+    }
+    &__submit-btn:hover {
+      border-color: @color;
+    }
+    &__note {
+      .font-family(@font-tahoma);
+      .font-size(1.5rem, 22px);
+      color: @black-2c;
+      .align-center();
+    }
+}

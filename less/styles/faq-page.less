@@ -1,0 +1,41 @@
+.faq-page {
+  &__item {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    vertical-align: top;
+  }
+  &__item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+    &__title {
+      display: inline-block;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed @color;
+      .font-family(@font-bold);
+      .font-size(1.8rem,18px);
+      color: @color;
+      .uppercase();
+      cursor: pointer;
+    }
+    &__descr {
+      display: none;
+      margin-bottom: 27px;
+      padding: 5px 9px;
+      //background: @white;
+      .font-family(@font-tahoma);
+      .font-size(1.5rem,21px);
+      color: #2c2c2c;
+
+      @media @screen-xs {
+        max-height: none;
+        overflow: visible;
+      }
+    }
+      &__descr span {
+        background: @white;
+        box-shadow: -6px 0 0 2px @white, 6px 0 0 2px @white;
+        padding: 2px 0 3px;
+      }
+}

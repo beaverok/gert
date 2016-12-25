@@ -1,0 +1,33 @@
+.discounts-page {
+  &__top::after {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin-bottom: 47px;
+    content: '';
+  }
+  &__descr {
+    float: left;
+    max-width: 950px;
+    .font-family(@font-tahoma);
+    .font-size(1.5rem, 21px);
+    color: @black-2c;
+    opacity: 0.88;
+  }
+  &__top-btn {
+    float: right;
+    .size(200px,73px);
+    border: 3px solid @red;
+  }
+    &__top-btn a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 15px 22px 14px 24px;
+      .font-family(@font-bold);
+      .font-size(1.8rem, normal);
+      color: @color;
+      text-decoration: underline;
+      .uppercase();
+    }
+}

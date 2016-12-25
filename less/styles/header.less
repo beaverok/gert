@@ -272,6 +272,7 @@ body {
 
       &__auth {
         float: right;
+        .relative();
       }
         &__auth-link {
           display: inline-block;
@@ -290,6 +291,33 @@ body {
         &__auth-link:hover {
           .bg-color(@color);
         }
+          &__auth-submenu {
+          display: none;
+          .ul-reset();
+          width: 200px;
+          .absolute();
+          top: 22px;
+          right: 0;
+          z-index: 1000;
+          .bg-color(@white);
+          border: 1px solid @color;
+          padding: 10px;
+          .transition();
+        }
+          &__auth-submenu li {
+            display: block;
+            margin-bottom: 10px;
+          }
+          &__auth-submenu li a {
+            .font-family(@font-tahoma);
+            .font-size(1.4rem, 14px);
+            color: @black-2c;
+            .no-decor();
+            .transition();
+          }
+          &__auth-submenu li a:hover {
+            color: @red-039;
+          }
 }
 
 @import "top-menu";

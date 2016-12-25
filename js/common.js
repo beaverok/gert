@@ -21,6 +21,12 @@ $(document).ready(function () {
         $('.top-menu').slideToggle();
     });
 
+    $('.header__auth').mouseenter(function () {
+       $('.header__auth-submenu').fadeIn(200);
+    });
+    $('.header__auth').mouseleave(function () {
+        $('.header__auth-submenu').fadeOut();
+    });
 
     var is_safari = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 &&  navigator.userAgent.indexOf('Android') == -1;
     if (is_safari) {
@@ -37,6 +43,7 @@ $(document).ready(function () {
     });
     $('.product__more').click(function () {
         var selected = $(this).attr('href');
+        var selected = $(this).attr('href');
         $.scrollTo(selected, 1000, { offset: -70 });
     });
 
@@ -52,6 +59,10 @@ $(document).ready(function () {
     $('.price-page__section').click(function () {
         var selected = $(this).attr('href');
         $.scrollTo(selected, 1000, { offset: -70 });
+    });
+
+    $('.faq-page__title').click(function () {
+       $(this).next().slideToggle();
     });
 
 });
