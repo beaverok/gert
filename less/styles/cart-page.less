@@ -29,6 +29,7 @@
         .uppercase();
         .align-center();
         vertical-align: middle;
+        letter-spacing: 2px;
       }
       &__table th:nth-of-type(1) {
         width: 103px;
@@ -104,6 +105,12 @@
           @media @screen-xs {
             font-size: 1.4rem;
           }
+        }
+        &__price-old {
+          display: block;
+          .font-family(@font-trebuchet);
+          .font-size(1.3rem,normal);
+          color: @white;
         }
         &__quan {
           display: block;
@@ -217,6 +224,7 @@
             color: @red;
             .uppercase();
             vertical-align: middle;
+            letter-spacing: 2px;
           }
           &__sum-price {
             display: inline-block;

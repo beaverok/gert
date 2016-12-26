@@ -21,8 +21,8 @@ body {
     top: 0;
     z-index: 10100;
     height: 60px;
-    border-bottom: 1px solid #ccc;
-    .bg-color(@white);
+    border-bottom: 2px solid @color;
+    .bg-image("../images/bg_common.jpg");
   }
   &.is-stuck &__inner {
     height: 60px;
@@ -47,14 +47,13 @@ body {
     display: none;
   }
   &.is-stuck .header__url {
-    top: 5px;
+    top: 17px;
     left: 60px;
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   &.is-stuck .main-menu {
     bottom: 0;
-    left: 60px;
-    right: auto;
+    right: 188px;
 
     @media @screen-md {
       clear: none;
@@ -74,6 +73,7 @@ body {
   }
   &.is-stuck .main-menu__link {
     line-height: 30px;
+    letter-spacing: 1px;
 
     @media @screen-md {
       padding: 0 8px;
@@ -86,7 +86,7 @@ body {
   &.is-stuck .header-cart {
     width: 158px;
     top: 9px;
-    right: 390px;
+    right: 0;
     padding-left: 0;
   }
   &.is-stuck .header-cart::before {
@@ -97,14 +97,14 @@ body {
     margin-right: 10px;
   }
   &.is-stuck .header__top-right {
-    top: 8px;
-    right: auto;
-    left: 209px;
+    top: 5px;
+    right: 200px;
   }
   &.is-stuck .header-search {
     top: 6px;
     right: 0;
     border: 1px solid @color;
+    display: none;
   }
 
   @media @screen-md {
