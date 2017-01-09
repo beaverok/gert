@@ -556,9 +556,10 @@ h2 {
   height: 6px;
 }
 .red ul.mega-menu li .sub-container {
+  min-height: 334px;
   position: absolute;
   margin-left: -3px;
-  background-color: #fff;
+  background-image: url("../images/bg_auction-index.jpg");
   top: 51px !important;
 }
 .is-stuck .red ul.mega-menu li .sub-container {
@@ -569,23 +570,39 @@ h2 {
 }
 .red ul.mega-menu li .sub-container.mega .sub {
   padding: 20px 20px;
-  border: 1px solid #000;
 }
 .red ul.mega-menu li .sub .row {
-  width: 100%;
+  width: 120px;
   overflow: hidden;
   clear: both;
 }
 .red ul.mega-menu li .sub li {
-  list-style: none;
-  float: none;
-  width: 170px;
-  font-size: 1em;
-  font-weight: normal;
+  display: block;
+}
+.red ul.mega-menu li .sub li a {
+  margin-bottom: 11px;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
+}
+.red ul.mega-menu li .sub li a:hover {
+  color: #ff0039;
 }
 .red ul.mega-menu li .sub li.mega-hdr {
-  margin: 0 10px 10px 0;
+  height: auto !important;
+  margin: 0 85px 30px 0;
   float: left;
+}
+.red ul.mega-menu li .sub li.mega-hdr:nth-last-of-type(4n) {
+  margin-right: 0;
 }
 .red ul.mega-menu li .sub li.mega-hdr.last {
   margin-right: 0;
@@ -594,29 +611,36 @@ h2 {
   background: none;
   border: none;
   text-shadow: none;
-  padding: 7px 10px;
+  padding: 0;
   display: block;
   float: none;
   text-decoration: none;
 }
 .red ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a {
   height: auto !important;
-  padding: 5px 5px 5px 15px;
-  margin-bottom: 5px;
-  background: #DB323A;
-  text-transform: uppercase;
-  font-weight: bold;
+  margin-bottom: 24px;
+  font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 18px;
   color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: top 400ms linear;
+  -moz-transition: top 400ms linear;
+  -ms-transition: top 400ms linear;
+  -o-transition: top 400ms linear;
+  transition: top 400ms linear;
+  transition: all 0.2s ease-out;
 }
 .red ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a:hover {
-  color: #000;
+  color: #ff0039;
 }
 .red ul.mega-menu .sub li.mega-hdr li a {
-  padding: 4px 5px 4px 20px;
+  padding: 0;
   font-weight: normal;
 }
 .red ul.mega-menu .sub li.mega-hdr li a:hover {
-  color: #a32403;
+  color: #ff0039;
 }
 .red ul.mega-menu .sub ul li {
   padding-right: 0;
@@ -815,8 +839,8 @@ body {
   top: 0;
   z-index: 10100;
   height: 60px;
-  border-bottom: 1px solid #ccc;
-  background-color: #fff;
+  border-bottom: 2px solid #000;
+  background-image: url("../images/bg_common.jpg");
 }
 .header.is-stuck .header__inner {
   height: 60px;
@@ -845,14 +869,13 @@ body {
   display: none;
 }
 .header.is-stuck .header__url {
-  top: 5px;
+  top: 17px;
   left: 60px;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 .header.is-stuck .main-menu {
   bottom: 0;
-  left: 60px;
-  right: auto;
+  right: 188px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .header.is-stuck .main-menu {
@@ -875,6 +898,7 @@ body {
 }
 .header.is-stuck .main-menu__link {
   line-height: 30px;
+  letter-spacing: 1px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .header.is-stuck .main-menu__link {
@@ -890,7 +914,7 @@ body {
 .header.is-stuck .header-cart {
   width: 158px;
   top: 9px;
-  right: 390px;
+  right: 0;
   padding-left: 0;
 }
 .header.is-stuck .header-cart::before {
@@ -901,14 +925,14 @@ body {
   margin-right: 10px;
 }
 .header.is-stuck .header__top-right {
-  top: 8px;
-  right: auto;
-  left: 209px;
+  top: 5px;
+  right: 200px;
 }
 .header.is-stuck .header-search {
   top: 6px;
   right: 0;
   border: 1px solid #000;
+  display: none;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .header {
@@ -1769,6 +1793,7 @@ body {
   line-height: normal;
   color: #ff0039;
   text-align: center;
+  letter-spacing: 2px;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .top-slider__text {
@@ -1908,6 +1933,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 2px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .top-slider__present-text {
@@ -1937,6 +1963,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .top-slider__present-btn:hover {
   background-color: #82c214;
@@ -2092,6 +2119,7 @@ body {
   line-height: 2.6rem;
   color: #282828;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .index-advants__note {
   display: inline-block;
@@ -2131,6 +2159,7 @@ body {
   color: #ff0039;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 .index-auctions__list {
   margin: 0;
@@ -2318,6 +2347,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .auction-item__title:hover {
   color: #ff0039;
@@ -2361,6 +2391,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .auction-item__cart-btn::before {
   position: absolute;
@@ -2502,6 +2533,7 @@ body {
   display: inline-block;
   padding: 0 7px 0 10px;
   background-color: #ffd900;
+  letter-spacing: 1px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .subscribe__text span {
@@ -2509,11 +2541,11 @@ body {
   }
 }
 .subscribe__text span:nth-of-type(1) {
-  width: 157px;
+  width: 175px;
   padding-top: 4px;
 }
 .subscribe__text span:nth-of-type(2) {
-  width: 157px;
+  width: 175px;
 }
 .subscribe__text span:nth-of-type(3) {
   padding-bottom: 3px;
@@ -2586,6 +2618,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .subscribe__submit {
@@ -2645,6 +2678,7 @@ body {
   color: #000;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 .popular-item {
   display: inline-block;
@@ -2723,6 +2757,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .popular-item__title:hover {
   color: #ff0039;
@@ -2774,6 +2809,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .popular-item__cart-btn::before {
   position: absolute;
@@ -2824,6 +2860,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 .index-kurs__list {
   margin: 0;
@@ -2946,6 +2983,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .kurs-item__title:hover {
   color: #ff0039;
@@ -2994,6 +3032,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .kurs-item__cart-btn::before {
   position: absolute;
@@ -3046,6 +3085,7 @@ body {
   color: #000;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 .index-reviews__all-link {
   position: relative;
@@ -3062,6 +3102,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .index-reviews__all-link {
@@ -3213,6 +3254,7 @@ body {
   color: #000;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 .index-brands__list {
   margin: 0;
@@ -3426,6 +3468,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .page-footer__price-link a::before {
   display: block;
@@ -3588,7 +3631,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin: -3px 80px 0 0;
+  margin: -3px 75px 0 0;
   vertical-align: top;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
@@ -3623,6 +3666,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .footer-menu__link:hover {
   color: #ff0039;
@@ -3805,6 +3849,7 @@ body {
   font-size: 4.6rem;
   line-height: 3rem;
   color: #000;
+  letter-spacing: 1px;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .page-title {
@@ -4518,7 +4563,7 @@ body {
   display: inline-block;
   width: 103px;
   height: 103px;
-  margin-right: 16px;
+  margin-right: 15px;
   background-color: #fff;
   text-align: center;
   line-height: 103px;
@@ -4586,6 +4631,7 @@ body {
   line-height: 3rem;
   color: #000;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .product__brand {
   position: absolute;
@@ -4603,6 +4649,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: normal;
 }
 .product__brand:hover {
   color: #ff0039;
@@ -4623,6 +4670,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: normal;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .product__rev-lnk {
@@ -4816,7 +4864,7 @@ body {
   position: relative;
   margin-right: 11px;
   padding-left: 47px;
-  border: 3px solid #ff0039;
+  border: 3px solid #f20303;
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 3.6rem;
@@ -4880,7 +4928,7 @@ body {
 }
 .product__to-fav:hover,
 .product__to-fav--active {
-  border-color: #ff0039;
+  border-color: #f20303;
 }
 .product__to-fav--active::before {
   position: absolute;
@@ -5172,6 +5220,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  letter-spacing: 2px;
 }
 .cart-page__table th:nth-of-type(1) {
   width: 103px;
@@ -5262,6 +5311,13 @@ body {
   .cart-page__price {
     font-size: 1.4rem;
   }
+}
+.cart-page__price-old {
+  display: block;
+  font-family: "Trebuchet MS Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: normal;
+  color: #fff;
 }
 .cart-page__quan {
   display: block;
@@ -5390,6 +5446,7 @@ body {
   color: #f20303;
   text-transform: uppercase;
   vertical-align: middle;
+  letter-spacing: 2px;
 }
 .cart-page__sum-price {
   display: inline-block;
@@ -5565,6 +5622,7 @@ body {
   line-height: normal;
   color: #000;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .order-block__descr {
   margin-bottom: 19px;
@@ -5640,6 +5698,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .order-block__submit-btn:hover {
   border-color: #000;
@@ -6202,6 +6261,25 @@ body {
     line-height: normal;
   }
 }
+.fav-item__wrap {
+  position: relative;
+}
+.fav-item .price-item__name {
+  width: 220px;
+  margin-right: 30px;
+}
+.fav-item .price-item__sum {
+  width: 120px;
+}
+.fav-item .price-item__to-cart {
+  margin-right: 15px;
+}
+.cart-page__remove--fav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -8px;
+}
 .personal-page {
   width: 1170px;
   margin: 0 auto;
@@ -6285,6 +6363,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .personal-page__logout {
@@ -6399,6 +6478,7 @@ body {
   line-height: 18px;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .personal-sidebar__balance-block span {
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
@@ -6406,6 +6486,7 @@ body {
   line-height: 25px;
   color: #f20303;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .personal-sidebar__balance-block a {
   display: inline-block;
@@ -6643,7 +6724,7 @@ body {
   display: inline-block;
   height: 43px;
   position: relative;
-  padding: 0 17px;
+  padding: 0 10px;
   border: 3px solid #f20303;
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
@@ -6659,6 +6740,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .personal-tabs__li a {
@@ -6742,6 +6824,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  letter-spacing: 2px;
 }
 .order-line td {
   padding: 22px 0;
@@ -6940,6 +7023,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .product-item__title:hover {
   color: #ff0039;
@@ -6992,6 +7076,7 @@ body {
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
   text-align: left;
+  letter-spacing: 1px;
 }
 .product-item__cart-btn::before {
   position: absolute;
@@ -7018,6 +7103,7 @@ body {
   line-height: 1.4rem;
   color: #000;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .sort-block__link {
   display: inline-block;
@@ -7035,6 +7121,7 @@ body {
   -o-transition: top 400ms linear;
   transition: top 400ms linear;
   transition: all 0.2s ease-out;
+  letter-spacing: 1px;
 }
 .sort-block__link:last-child {
   margin-right: 0;
@@ -7298,6 +7385,7 @@ body {
   width: 200px;
   height: 73px;
   border: 3px solid #f20303;
+  letter-spacing: 1px;
 }
 .discounts-page__top-btn a {
   display: block;

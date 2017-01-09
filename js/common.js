@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#main-menu').dcMegaMenu({
-        rowItems: '4',
+        rowItems: '5',
         speed: 'fast',
         effect: 'fade'
     });
