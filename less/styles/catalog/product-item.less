@@ -2,7 +2,7 @@
   display: inline-block;
   width: 226px;
   margin-bottom: 72px;
-  margin-right: 84px;
+  margin-right: 82px;
   .align-center();
   vertical-align: top;
 
@@ -52,7 +52,7 @@
   }
   &__icon-discount {
     background-image: url(../images/spritesheet.png);
-    background-position: -164px 0px;
+    background-position: -171px 0px;
     width: 103px;
     height: 103px;
     .absolute();
@@ -113,8 +113,11 @@
   }
   &__price--old {
     display: inline-block;
+    .relative();
+    top: 2px;
     .font-family(@font-trebuchet);
     .font-size(1.4rem,normal);
+    font-weight: bold;
     color: @white;
     vertical-align: super;
   }
@@ -138,7 +141,7 @@
     .absolute();
     .pos(9px,20px);
     background-image: url(../images/spritesheet.png);
-    background-position: -267px -200px;
+    background-position: -336px -196px;
     width: 14px;
     height: 19px;
     content: '';
