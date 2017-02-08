@@ -3717,9 +3717,8 @@ body {
   bottom: 46px;
 }
 .side-buttons__consult .side-buttons__label {
-  right: -17px;
-  bottom: 51px;
-  font-size: 1.2rem;
+  right: -20px;
+  bottom: 47px;
 }
 .side-buttons__consult::before {
   display: block;
@@ -6495,7 +6494,6 @@ body {
   line-height: 18px;
   color: #fff;
   text-decoration: underline;
-  opacity: 0.5;
   -webkit-transition: top 400ms linear;
   -moz-transition: top 400ms linear;
   -ms-transition: top 400ms linear;
@@ -6532,7 +6530,7 @@ body {
   font-family: Tahoma, Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 15px;
-  color: #a8a8a9;
+  color: #fff;
 }
 .personal-sidebar__discount-current span {
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
@@ -6546,7 +6544,7 @@ body {
   font-family: Tahoma, Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 15px;
-  color: #a8a8a9;
+  color: #fff;
 }
 .personal-sidebar__chart {
   position: relative;
@@ -6590,7 +6588,6 @@ body {
   font-size: 1.2rem;
   line-height: 12px;
   color: #fff;
-  opacity: 0.5;
   text-align: left;
 }
 .personal-sidebar__percent label {
@@ -6655,7 +6652,7 @@ body {
   content: '';
 }
 .personal-tabs {
-  max-width: 853px;
+  max-width: 870px;
   width: 100%;
   float: right;
 }
@@ -6724,7 +6721,7 @@ body {
   display: inline-block;
   height: 43px;
   position: relative;
-  padding: 0 10px;
+  padding: 0 7px;
   border: 3px solid #f20303;
   font-family: "bebasneue_bold", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
